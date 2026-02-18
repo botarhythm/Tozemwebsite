@@ -63,11 +63,75 @@ export function Reservation() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.2 }}
         >
-          <div className="mb-12 text-center space-y-4">
+          <div className="mb-20 text-center space-y-4">
             <p className="text-gray-700 tracking-[0.05em] leading-relaxed">
               ご予約・ご質問は下記フォームよりお問い合わせください。<br />
               3営業日以内にご連絡いたします。
             </p>
+          </div>
+
+          {/* Pricing Info */}
+          <div className="mb-20 space-y-12">
+            <div className="space-y-6">
+              <h3 className="text-xl tracking-[0.1em] text-center">宿泊料金（税込）</h3>
+              <p className="text-sm text-center text-gray-500">※1棟貸切 4名様までの基本料金です</p>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div className="p-6 bg-gray-50 space-y-2">
+                  <h4 className="font-medium tracking-[0.1em]">通常日</h4>
+                  <p className="text-2xl font-serif">¥40,000~</p>
+                </div>
+                <div className="p-6 bg-gray-50 space-y-2">
+                  <h4 className="font-medium tracking-[0.1em]">ハイシーズン</h4>
+                  <p className="text-2xl font-serif">¥46,000~</p>
+                  <p className="text-xs text-gray-500">7/13-9/30, GW</p>
+                </div>
+                <div className="p-6 bg-gray-50 space-y-2">
+                  <h4 className="font-medium tracking-[0.1em]">特定日</h4>
+                  <p className="text-2xl font-serif">¥52,000~</p>
+                  <p className="text-xs text-gray-500">8/9-17, 12/20-1/5</p>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 p-6 space-y-4 text-sm tracking-[0.05em]">
+                <p>
+                  <span className="font-medium">追加料金（1名様あたり）:</span><br />
+                  大人（中学生以上）: ¥9,000 / 子供（3歳以上）: ¥5,000<br />
+                  ※2歳以下（添い寝）は無料
+                </p>
+                <p>
+                  <span className="font-medium">連泊割引:</span> 2泊目以降 ¥3,000 引き（清掃なし）
+                </p>
+                <p>
+                  <span className="font-medium">時間外利用:</span> ¥5,000 / 1h（要相談）
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <h3 className="text-xl tracking-[0.1em] text-center">キャンセルポリシー</h3>
+              <div className="max-w-md mx-auto bg-gray-50 p-6 text-sm tracking-[0.05em] space-y-2">
+                <div className="flex justify-between border-b border-gray-200 pb-2">
+                  <span>30日〜15日前</span>
+                  <span>10%</span>
+                </div>
+                <div className="flex justify-between border-b border-gray-200 pb-2">
+                  <span>14日〜8日前</span>
+                  <span>50%</span>
+                </div>
+                <div className="flex justify-between border-b border-gray-200 pb-2">
+                  <span>7日〜3日前</span>
+                  <span>80%</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>2日〜当日</span>
+                  <span>100%</span>
+                </div>
+                <p className="text-xs text-gray-400 mt-2 pt-2">
+                  ※30日以前は全額返金（振込手数料はお客様負担）
+                </p>
+              </div>
+            </div>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">

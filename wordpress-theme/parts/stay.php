@@ -73,7 +73,7 @@
                     ],
                 ];
                 foreach ($features as $feature) : ?>
-                    <div class="text-center space-y-4 p-6 bg-white">
+                    <div class="text-center space-y-4 p-6 bg-white shadow-sm">
                         <div class="flex justify-center">
                             <?php echo $feature['icon']; ?>
                         </div>
@@ -83,6 +83,51 @@
                         </p>
                     </div>
                 <?php endforeach; ?>
+            </div>
+
+            <!-- Facility Details -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-sm tracking-[0.05em] mt-20 fade-up" data-delay="600">
+                <div class="space-y-4">
+                    <h4 class="text-lg tracking-[0.1em] border-b border-gray-200 pb-2">
+                        <?php _e('設備・アメニティ (無料)', 'tozem'); ?>
+                    </h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><?php _e('バス / トイレ / 洗面', 'tozem'); ?></li>
+                        <li><?php _e('外シャワー (海上がりに便利)', 'tozem'); ?></li>
+                        <li><?php _e('エアコン / 扇風機 / 暖房機器', 'tozem'); ?></li>
+                        <li><?php _e('Wi-Fi (Free)', 'tozem'); ?></li>
+                        <li><?php _e('シャンプー / リンス / ボディソープ', 'tozem'); ?></li>
+                        <li><?php _e('フェイスタオル / 歯ブラシセット / ドライヤー', 'tozem'); ?></li>
+                        <li class="text-xs text-gray-400"><?php _e('※寝巻きのご用意はございません', 'tozem'); ?></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-lg tracking-[0.1em] border-b border-gray-200 pb-2">
+                        <?php _e('キッチン設備 (無料)', 'tozem'); ?>
+                    </h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><?php _e('ガスコンロ / 冷蔵庫 / 冷凍庫', 'tozem'); ?></li>
+                        <li><?php _e('電気炊飯器 / 電気ポット / 土鍋', 'tozem'); ?></li>
+                        <li><?php _e('カセットコンロ (ボンベは持参)', 'tozem'); ?></li>
+                        <li><?php _e('調理器具一式 (鍋・フライパン他)', 'tozem'); ?></li>
+                        <li><?php _e('食器・カトラリー一式', 'tozem'); ?></li>
+                        <li><?php _e('お子様用プラ食器', 'tozem'); ?></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-lg tracking-[0.1em] border-b border-gray-200 pb-2">
+                        <?php _e('その他・オプション', 'tozem'); ?>
+                    </h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><?php _e('屋根付きウッドデッキ', 'tozem'); ?></li>
+                        <li><?php _e('外テーブル', 'tozem'); ?></li>
+                        <li><?php _e('バーベキュー台 (有料レンタル ¥5,000)', 'tozem'); ?></li>
+                        <li><?php _e('駐車場 (2台)', 'tozem'); ?></li>
+                        <li><?php _e('全館禁煙 (屋外に灰皿あり)', 'tozem'); ?></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

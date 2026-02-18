@@ -61,21 +61,39 @@ export function Experience() {
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-gray-400 rounded-full mr-3 mt-2 flex-shrink-0" />
-                    <span className="tracking-[0.05em]">少人数制のワークショップ</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3 mt-2 flex-shrink-0" />
                     <span className="tracking-[0.05em]">創作活動を通じた自己との対話</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3 mt-2 flex-shrink-0" />
-                    <span className="tracking-[0.05em]">屋根付きBBQ設備（有料レンタル）</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3 mt-2 flex-shrink-0" />
-                    <span className="tracking-[0.05em]">お庭での手持ち花火OK</span>
-                  </li>
                 </ul>
+              </div>
+
+              {/* Detailed Experience Info */}
+              <div className="space-y-8 pt-6 border-t border-gray-200">
+                <div className="space-y-4">
+                  <h4 className="text-lg tracking-[0.1em]">BBQ・花火</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    屋根付きのウッドデッキで雨天でもBBQが可能です。<br />
+                    利用料: 5,000円/日（コンロ、網、トング、テーブル等の機材一式）<br />
+                    <span className="text-xs text-gray-500">※食材、炭、着火剤、調味料、鉄板はご持参ください。<br />※お庭での手持ち花火も可能です（打ち上げ花火不可）。</span>
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  <h4 className="text-lg tracking-[0.1em]">海遊び・釣り</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    徒歩2分の目の前の海は岩場で、磯遊びやシュノーケリングに最適です。<br />
+                    透明度が高く、熱帯魚が見られることも。岩場なのでマリンシューズがあると安心です。<br />
+                    <span className="text-xs text-gray-500">※近隣に海水浴場（波左間、沖の島など）もございます（車で5-15分）。</span>
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  <h4 className="text-lg tracking-[0.1em]">近隣のお楽しみ</h4>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>温泉: 千里の風・花しぶき（車で10分）、里見の湯（車で20分）</li>
+                    <li>ゴルフ: 館山カントリークラブ（車で8分）</li>
+                    <li>景色: 晴れた日は富士山の眺望や、伊豆大島に沈む夕日が絶景です。</li>
+                  </ul>
+                </div>
               </div>
 
               <p className="text-sm text-gray-500 tracking-[0.05em] leading-relaxed">

@@ -15,6 +15,70 @@
                 </p>
             </div>
 
+            <!-- Pricing Info -->
+            <div class="mb-20 space-y-12 fade-up" data-delay="200">
+                <div class="space-y-6">
+                    <h3 class="text-xl tracking-[0.1em] text-center"><?php _e('宿泊料金（税込）', 'tozem'); ?></h3>
+                    <p class="text-sm text-center text-gray-500"><?php _e('※1棟貸切 4名様までの基本料金です', 'tozem'); ?></p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div class="p-6 bg-gray-50 space-y-2">
+                            <h4 class="font-medium tracking-[0.1em]"><?php _e('通常日', 'tozem'); ?></h4>
+                            <p class="text-2xl font-serif">¥40,000~</p>
+                        </div>
+                        <div class="p-6 bg-gray-50 space-y-2">
+                            <h4 class="font-medium tracking-[0.1em]"><?php _e('ハイシーズン', 'tozem'); ?></h4>
+                            <p class="text-2xl font-serif">¥46,000~</p>
+                            <p class="text-xs text-gray-500">7/13-9/30, GW</p>
+                        </div>
+                        <div class="p-6 bg-gray-50 space-y-2">
+                            <h4 class="font-medium tracking-[0.1em]"><?php _e('特定日', 'tozem'); ?></h4>
+                            <p class="text-2xl font-serif">¥52,000~</p>
+                            <p class="text-xs text-gray-500">8/9-17, 12/20-1/5</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 space-y-4 text-sm tracking-[0.05em]">
+                        <p>
+                            <span class="font-medium"><?php _e('追加料金（1名様あたり）:', 'tozem'); ?></span><br/>
+                            <?php _e('大人（中学生以上）: ¥9,000 / 子供（3歳以上）: ¥5,000', 'tozem'); ?><br/>
+                            <?php _e('※2歳以下（添い寝）は無料', 'tozem'); ?>
+                        </p>
+                        <p>
+                            <span class="font-medium"><?php _e('連泊割引:', 'tozem'); ?></span> <?php _e('2泊目以降 ¥3,000 引き（清掃なし）', 'tozem'); ?>
+                        </p>
+                        <p>
+                            <span class="font-medium"><?php _e('時間外利用:', 'tozem'); ?></span> <?php _e('¥5,000 / 1h（要相談）', 'tozem'); ?>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-xl tracking-[0.1em] text-center"><?php _e('キャンセルポリシー', 'tozem'); ?></h3>
+                    <div class="max-w-md mx-auto bg-gray-50 p-6 text-sm tracking-[0.05em] space-y-2">
+                        <div class="flex justify-between border-b border-gray-200 pb-2">
+                            <span><?php _e('30日〜15日前', 'tozem'); ?></span>
+                            <span>10%</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-200 pb-2">
+                            <span><?php _e('14日〜8日前', 'tozem'); ?></span>
+                            <span>50%</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-200 pb-2">
+                            <span><?php _e('7日〜3日前', 'tozem'); ?></span>
+                            <span>80%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span><?php _e('2日〜当日', 'tozem'); ?></span>
+                            <span>100%</span>
+                        </div>
+                        <p class="text-xs text-gray-400 mt-2 pt-2">
+                            <?php _e('※30日以前は全額返金（振込手数料はお客様負担）', 'tozem'); ?>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <!-- Note: This form needs a backend handler or a WordPress plugin (like Contact Form 7) to function. -->
             <form action="" method="post" class="space-y-6">
                 <div>

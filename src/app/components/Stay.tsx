@@ -107,7 +107,7 @@ export function Stay() {
             transition={{ duration: 1, delay: 0.6 }}
           >
             {features.map((feature, index) => (
-              <div key={index} className="text-center space-y-4 p-6 bg-white">
+              <div key={index} className="text-center space-y-4 p-6 bg-white shadow-sm">
                 <div className="flex justify-center">
                   <feature.icon size={32} className="text-gray-800" strokeWidth={1} />
                 </div>
@@ -117,6 +117,56 @@ export function Stay() {
                 </p>
               </div>
             ))}
+          </motion.div>
+
+          {/* Facility Details */}
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-sm tracking-[0.05em]"
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1, delay: 0.8 }}
+          >
+            <div className="space-y-4">
+              <h4 className="text-lg tracking-[0.1em] border-b border-gray-200 pb-2">
+                設備・アメニティ (無料)
+              </h4>
+              <ul className="space-y-2 text-gray-600">
+                <li>バス / トイレ / 洗面</li>
+                <li>外シャワー (海上がりに便利)</li>
+                <li>エアコン / 扇風機 / 暖房機器</li>
+                <li>Wi-Fi (Free)</li>
+                <li>シャンプー / リンス / ボディソープ</li>
+                <li>フェイスタオル / 歯ブラシセット / ドライヤー</li>
+                <li className="text-xs text-gray-400">※寝巻きのご用意はございません</li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h4 className="text-lg tracking-[0.1em] border-b border-gray-200 pb-2">
+                キッチン設備 (無料)
+              </h4>
+              <ul className="space-y-2 text-gray-600">
+                <li>ガスコンロ / 冷蔵庫 / 冷凍庫</li>
+                <li>電気炊飯器 / 電気ポット / 土鍋</li>
+                <li>カセットコンロ (ボンベは持参)</li>
+                <li>調理器具一式 (鍋・フライパン他)</li>
+                <li>食器・カトラリー一式</li>
+                <li>お子様用プラ食器</li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h4 className="text-lg tracking-[0.1em] border-b border-gray-200 pb-2">
+                その他・オプション
+              </h4>
+              <ul className="space-y-2 text-gray-600">
+                <li>屋根付きウッドデッキ</li>
+                <li>外テーブル</li>
+                <li>バーベキュー台 (有料レンタル ¥5,000)</li>
+                <li>駐車場 (2台)</li>
+                <li>全館禁煙 (屋外に灰皿あり)</li>
+              </ul>
+            </div>
           </motion.div>
         </div>
       </div>
