@@ -42,8 +42,8 @@ function tozem_add_structured_data() {
             'latitude' => '34.963936',
             'longitude' => '139.756414'
         ],
-        'url' => 'https://tozem.jp',
-        'email' => 'info@tozem.jp',
+        'url' => 'https://tozem.net',
+        'email' => 'info@tozem.net',
         'telephone' => '+81-00-0000-0000', // Needs actual phone number if available
         'priceRange' => '$$$' // Estimated
     ];

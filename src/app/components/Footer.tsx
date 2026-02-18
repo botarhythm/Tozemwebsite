@@ -29,7 +29,7 @@ export function Footer() {
                 <Instagram size={24} strokeWidth={1} />
               </a>
               <a
-                href="mailto:info@tozem.jp"
+                href="mailto:info@tozem.net"
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Email"
               >

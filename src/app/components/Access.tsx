@@ -117,10 +117,10 @@ export function Access() {
               <div className="space-y-2">
                 <h3 className="text-lg tracking-[0.1em]">Email</h3>
                 <a
-                  href="mailto:info@tozem.jp"
+                  href="mailto:info@tozem.net"
                   className="text-gray-600 tracking-[0.05em] hover:text-gray-900 transition-colors"
                 >
-                  info@tozem.jp
+                  info@tozem.net
                 </a>
               </div>
             </div>

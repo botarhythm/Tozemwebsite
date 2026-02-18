@@ -83,6 +83,16 @@
                         </a>
                     </div>
                 </div>
+
+                <div class="flex items-start space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-gray-800 flex-shrink-0 mt-1" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10z"/><polyline points="22 7 12 13 2 7"/></svg>
+                    <div class="space-y-2">
+                        <h3 class="text-lg tracking-[0.1em]">Email</h3>
+                        <a href="mailto:info@tozem.net" class="text-gray-600 tracking-[0.05em] hover:text-gray-900 transition-colors">
+                            info@tozem.net
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div class="h-96 lg:h-full bg-gray-200 overflow-hidden fade-up" data-delay="200">
