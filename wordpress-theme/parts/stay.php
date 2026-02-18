@@ -86,7 +86,7 @@
             </div>
 
             <!-- Facility Details -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-sm tracking-[0.05em] mt-20 fade-up" data-delay="600">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-sm tracking-[0.05em] mt-32 fade-up" data-delay="600">
                 <div class="space-y-4">
                     <h4 class="text-lg tracking-[0.1em] border-b border-gray-200 pb-2">
                         <?php _e('設備・アメニティ (無料)', 'tozem'); ?>

@@ -2,6 +2,7 @@ import { Hero } from "./components/Hero";
 import { Concept } from "./components/Concept";
 import { Stay } from "./components/Stay";
 import { Experience } from "./components/Experience";
+import { Activities } from "./components/Activities";
 import { Gallery } from "./components/Gallery";
 import { Story } from "./components/Story";
 import { Access } from "./components/Access";
@@ -17,6 +18,7 @@ export default function App() {
       <Concept />
       <Stay />
       <Experience />
+      <Activities />
       <Gallery />
       <Story />
       <Access />

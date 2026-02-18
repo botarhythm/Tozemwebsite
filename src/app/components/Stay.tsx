@@ -121,7 +121,7 @@ export function Stay() {
 
           {/* Facility Details */}
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-sm tracking-[0.05em]"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-sm tracking-[0.05em] mt-32"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 0.8 }}

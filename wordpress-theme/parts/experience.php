@@ -50,47 +50,7 @@
                     </div>
 
                     <!-- Detailed Experience Info -->
-                    <div class="space-y-8 pt-6 border-t border-gray-200">
-                        <div class="space-y-4">
-                            <h4 class="text-lg tracking-[0.1em]"><?php _e('BBQ・花火', 'tozem'); ?></h4>
-                            <p class="text-sm text-gray-600 leading-relaxed">
-                                <?php _e('屋根付きのウッドデッキで雨天でもBBQが可能です。<br />利用料: 5,000円/日（コンロ、網、トング、テーブル等の機材一式）<br /><span class="text-xs text-gray-500">※食材、炭、着火剤、調味料、鉄板はご持参ください。<br />※お庭での手持ち花火も可能です（打ち上げ花火不可）。</span>', 'tozem'); ?>
-                            </p>
-                        </div>
-
-                        <div class="space-y-4">
-                            <h4 class="text-lg tracking-[0.1em]"><?php _e('海遊び・釣り', 'tozem'); ?></h4>
-                            <p class="text-sm text-gray-600 leading-relaxed">
-                                <?php _e('徒歩2分の目の前の海は岩場で、磯遊びやシュノーケリングに最適です。<br />透明度が高く、熱帯魚が見られることも。岩場なのでマリンシューズがあると安心です。<br /><span class="text-xs text-gray-500">※近隣に海水浴場（波左間、沖の島など）もございます（車で5-15分）。</span>', 'tozem'); ?>
-                            </p>
-                        </div>
-
-                        <div class="space-y-4">
-                            <h4 class="text-lg tracking-[0.1em]"><?php _e('近隣のお楽しみ', 'tozem'); ?></h4>
-                            <ul class="text-sm text-gray-600 space-y-2">
-                                <li>
-                                    <span class="font-medium"><?php _e('陶芸体験:', 'tozem'); ?></span> <?php _e('雨天でも楽しめます（要事前確認）。', 'tozem'); ?>
-                                </li>
-                                <li>
-                                    <span class="font-medium"><?php _e('ダイビング:', 'tozem'); ?></span> <?php _e('西川名オーシャンパーク・港まで徒歩1分。', 'tozem'); ?>
-                                </li>
-                                <li>
-                                    <span class="font-medium"><?php _e('灯台:', 'tozem'); ?></span> <?php _e('洲崎灯台（車で4分）、野島崎灯台（車で24分）。', 'tozem'); ?>
-                                </li>
-                                <li>
-                                    <span class="font-medium"><?php _e('温泉:', 'tozem'); ?></span> <?php _e('千里の風・花しぶき（車で10分）、里見の湯（車で20分）。', 'tozem'); ?>
-                                </li>
-                                <li>
-                                    <span class="font-medium"><?php _e('ゴルフ:', 'tozem'); ?></span> <?php _e('館山カントリークラブ（車で8分）、房州カントリークラブ（車で12分）。', 'tozem'); ?>
-                                </li>
-                                <li>
-                                    <span class="font-medium"><?php _e('景色:', 'tozem'); ?></span> <?php _e('晴れた日は富士山の眺望や、伊豆大島に沈む夕日が絶景です。', 'tozem'); ?>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <p class="text-sm text-gray-500 tracking-[0.05em] leading-relaxed">
+                    <p class="text-sm text-gray-500 tracking-[0.05em] leading-relaxed mt-8">
                         <?php _e('※ 体験内容は季節により変わります<br />※ 事前予約制（詳細はお問い合わせください）', 'tozem'); ?>
                     </p>
                 </div>
