@@ -38,7 +38,7 @@ export function Concept() {
               </p>
 
               <p className="text-base md:text-lg tracking-[0.1em]">
-                価格ではなく「価値」で選ばれる場所。<br />
+                飾らない土地の呼吸に、そっと心を委ねる。<br />
                 自然と余白を感じる滞在体験を。
               </p>
             </motion.div>
