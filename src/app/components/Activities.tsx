@@ -36,7 +36,7 @@ export function Activities() {
                             />
                         </div>
                         <div className="space-y-6">
-                            <h3 className="text-2xl md:text-3xl tracking-[0.15em]">BBQ・花火</h3>
+                            <h3 className="text-2xl md:text-3xl tracking-[0.15em]">BBQ</h3>
                             <p className="text-gray-700 leading-loose tracking-[0.05em]">
                                 屋根付きのウッドデッキで、雨の日でも安心してBBQをお楽しみいただけます。
                                 静かな潮風を感じながら、地元の食材を囲む贅沢なひとときを。

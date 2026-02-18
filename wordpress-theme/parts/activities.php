@@ -18,7 +18,7 @@
                     />
                 </div>
                 <div class="space-y-6">
-                    <h3 class="text-2xl md:text-3xl tracking-[0.15em]"><?php _e('BBQ・花火', 'tozem'); ?></h3>
+                    <h3 class="text-2xl md:text-3xl tracking-[0.15em]"><?php _e('BBQ', 'tozem'); ?></h3>
                     <p class="text-gray-700 leading-loose tracking-[0.05em]">
                         <?php _e('屋根付きのウッドデッキで、雨の日でも安心してBBQをお楽しみいただけます。<br />静かな潮風を感じながら、地元の食材を囲む贅沢なひとときを。', 'tozem'); ?>
                     </p>
