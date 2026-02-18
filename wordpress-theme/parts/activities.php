@@ -63,7 +63,7 @@
                             <h4 class="text-lg tracking-[0.1em] border-b border-gray-200 pb-2"><?php _e('アクティビティ', 'tozem'); ?></h4>
                             <ul class="text-sm text-gray-600 space-y-3">
                                 <li><span class="font-medium"><?php _e('陶芸体験:', 'tozem'); ?></span> <?php _e('雨天でも楽しめます（要事前確認）。', 'tozem'); ?></li>
-                                <li><span class="font-medium"><?php _e('ダイビング:', 'tozem'); ?></span> <?php _e('西川名オーシャンパーク・港まで徒歩1分。', 'tozem'); ?></li>
+                                <li><span class="font-medium"><?php _e('ダイビング:', 'tozem'); ?></span> <?php _e('西川名ダイビングサービス・港まで徒歩1分。', 'tozem'); ?></li>
                                 <li><span class="font-medium"><?php _e('ゴルフ:', 'tozem'); ?></span> <?php _e('館山カントリー（車8分）、房州カントリー（車12分）。', 'tozem'); ?></li>
                             </ul>
                         </div>
@@ -72,7 +72,7 @@
                             <ul class="text-sm text-gray-600 space-y-3">
                                 <li><span class="font-medium"><?php _e('温泉:', 'tozem'); ?></span> <?php _e('千里の風・花しぶき（車10分）、里見の湯（車20分）。', 'tozem'); ?></li>
                                 <li><span class="font-medium"><?php _e('灯台:', 'tozem'); ?></span> <?php _e('洲崎灯台（車4分）、野島崎灯台（車24分）。', 'tozem'); ?></li>
-                                <li><span class="font-medium"><?php _e('絶景:', 'tozem'); ?></span> <?php _e('富士山の眺望や、伊豆大島に沈む夕日が楽しめます。', 'tozem'); ?></li>
+                                <li><span class="font-medium"><?php _e('絶景:', 'tozem'); ?></span> <?php _e('富士山の眺望や、伊豆大島を臨む夕日が楽しめます。', 'tozem'); ?></li>
                             </ul>
                         </div>
                     </div>

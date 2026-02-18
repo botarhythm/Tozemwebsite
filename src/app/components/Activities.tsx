@@ -94,7 +94,7 @@ export function Activities() {
                                     <h4 className="text-lg tracking-[0.1em] border-b border-gray-200 pb-2">アクティビティ</h4>
                                     <ul className="text-sm text-gray-600 space-y-3">
                                         <li><span className="font-medium">陶芸体験:</span> 雨天でも楽しめます（要事前確認）。</li>
-                                        <li><span className="font-medium">ダイビング:</span> 西川名オーシャンパーク・港まで徒歩1分。</li>
+                                        <li><span className="font-medium">ダイビング:</span> 西川名ダイビングサービス・港まで徒歩1分。</li>
                                         <li><span className="font-medium">ゴルフ:</span> 館山カントリー（車8分）、房州カントリー（車12分）。</li>
                                     </ul>
                                 </div>
@@ -103,7 +103,7 @@ export function Activities() {
                                     <ul className="text-sm text-gray-600 space-y-3">
                                         <li><span className="font-medium">温泉:</span> 千里の風・花しぶき（車10分）、里見の湯（車20分）。</li>
                                         <li><span className="font-medium">灯台:</span> 洲崎灯台（車4分）、野島崎灯台（車24分）。</li>
-                                        <li><span className="font-medium">絶景:</span> 富士山の眺望や、伊豆大島に沈む夕日が楽しめます。</li>
+                                        <li><span className="font-medium">絶景:</span> 富士山の眺望や、伊豆大島を臨む夕日が楽しめます。</li>
                                     </ul>
                                 </div>
                             </div>
