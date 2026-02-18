@@ -67,10 +67,25 @@
 
                         <div class="space-y-4">
                             <h4 class="text-lg tracking-[0.1em]"><?php _e('近隣のお楽しみ', 'tozem'); ?></h4>
-                            <ul class="text-sm text-gray-600 space-y-1">
-                                <li><?php _e('温泉: 千里の風・花しぶき（車で10分）、里見の湯（車で20分）', 'tozem'); ?></li>
-                                <li><?php _e('ゴルフ: 館山カントリークラブ（車で8分）', 'tozem'); ?></li>
-                                <li><?php _e('景色: 晴れた日は富士山の眺望や、伊豆大島に沈む夕日が絶景です。', 'tozem'); ?></li>
+                            <ul class="text-sm text-gray-600 space-y-2">
+                                <li>
+                                    <span class="font-medium"><?php _e('陶芸体験:', 'tozem'); ?></span> <?php _e('雨天でも楽しめます（要事前確認）。', 'tozem'); ?>
+                                </li>
+                                <li>
+                                    <span class="font-medium"><?php _e('ダイビング:', 'tozem'); ?></span> <?php _e('西川名オーシャンパーク・港まで徒歩1分。', 'tozem'); ?>
+                                </li>
+                                <li>
+                                    <span class="font-medium"><?php _e('灯台:', 'tozem'); ?></span> <?php _e('洲崎灯台（車で4分）、野島崎灯台（車で24分）。', 'tozem'); ?>
+                                </li>
+                                <li>
+                                    <span class="font-medium"><?php _e('温泉:', 'tozem'); ?></span> <?php _e('千里の風・花しぶき（車で10分）、里見の湯（車で20分）。', 'tozem'); ?>
+                                </li>
+                                <li>
+                                    <span class="font-medium"><?php _e('ゴルフ:', 'tozem'); ?></span> <?php _e('館山カントリークラブ（車で8分）、房州カントリークラブ（車で12分）。', 'tozem'); ?>
+                                </li>
+                                <li>
+                                    <span class="font-medium"><?php _e('景色:', 'tozem'); ?></span> <?php _e('晴れた日は富士山の眺望や、伊豆大島に沈む夕日が絶景です。', 'tozem'); ?>
+                                </li>
                             </ul>
                         </div>
                     </div>

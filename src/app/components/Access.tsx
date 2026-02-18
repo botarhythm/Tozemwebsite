@@ -40,25 +40,46 @@ export function Access() {
             </div>
 
             <div className="flex items-start space-x-4">
-              <Train className="text-gray-800 flex-shrink-0 mt-1" size={24} strokeWidth={1} />
-              <div className="space-y-2">
-                <h3 className="text-lg tracking-[0.1em]">電車でお越しの方</h3>
-                <p className="text-gray-600 tracking-[0.05em] leading-relaxed">
-                  JR内房線「館山駅」より<br />
-                  車で約20分
-                </p>
+              <Car className="text-gray-800 flex-shrink-0 mt-1" size={24} strokeWidth={1} />
+              <div className="space-y-4">
+                <div>
+                  <h3 className="text-lg tracking-[0.1em]">お車でお越しの方</h3>
+                  <p className="text-gray-600 tracking-[0.05em] leading-relaxed">
+                    東京湾アクアライン ➡ 木更津IC ➡ 館山自動車道 ➡ 富浦IC<br />
+                    富浦ICより約30分<br />
+                    <span className="text-sm text-gray-500">※ 駐車場あり（2台分）</span>
+                  </p>
+                </div>
               </div>
             </div>
 
             <div className="flex items-start space-x-4">
-              <Car className="text-gray-800 flex-shrink-0 mt-1" size={24} strokeWidth={1} />
-              <div className="space-y-2">
-                <h3 className="text-lg tracking-[0.1em]">お車でお越しの方</h3>
-                <p className="text-gray-600 tracking-[0.05em] leading-relaxed">
-                  富津館山道路「富浦IC」より<br />
-                  約30分<br />
-                  ※ 駐車場あり（2台分）
-                </p>
+              <Train className="text-gray-800 flex-shrink-0 mt-1" size={24} strokeWidth={1} />
+              <div className="space-y-4">
+                <div>
+                  <h3 className="text-lg tracking-[0.1em]">公共交通機関でお越しの方</h3>
+                  <div className="space-y-4 mt-2">
+                    <div>
+                      <h4 className="font-medium text-gray-800">高速バス（房総なのはな号）</h4>
+                      <p className="text-gray-600 tracking-[0.05em] leading-relaxed">
+                        新宿駅 ➡ 館山駅（約2時間 / 2,500円程）
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-800">電車</h4>
+                      <p className="text-gray-600 tracking-[0.05em] leading-relaxed">
+                        木更津（JR内房線 安房鴨川行）➡ 館山駅
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-800">館山駅より</h4>
+                      <p className="text-gray-600 tracking-[0.05em] leading-relaxed">
+                        路線バス（館山駅東口）➡ 西川名バス停（約30分）<br />
+                        バス停より徒歩1分
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
