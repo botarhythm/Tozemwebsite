@@ -51,6 +51,17 @@
                             <span class="font-medium"><?php _e('時間外利用:', 'tozem'); ?></span> <?php _e('¥5,000 / 1h（要相談）', 'tozem'); ?>
                         </p>
                     </div>
+
+                    <div class="bg-gray-50 p-6 space-y-4 text-sm tracking-[0.05em]">
+                        <h4 class="font-medium tracking-[0.1em] border-b border-gray-200 pb-2"><?php _e('オプション・レンタル（税込）', 'tozem'); ?></h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <p><span class="font-medium"><?php _e('BBQ施設利用料:', 'tozem'); ?></span> ¥5,000</p>
+                            <p><span class="font-medium"><?php _e('釣竿レンタル（1日）:', 'tozem'); ?></span> ¥3,500</p>
+                            <p><span class="font-medium"><?php _e('スノーケル3点セット:', 'tozem'); ?></span> ¥3,500</p>
+                            <p><span class="font-medium"><?php _e('ライフジャケット / タモ網:', 'tozem'); ?></span> 各¥500</p>
+                        </div>
+                        <p class="text-[10px] text-gray-400"><?php _e('※詳細は周辺ガイドをご確認ください。現地決済となります。', 'tozem'); ?></p>
+                    </div>
                 </div>
 
                 <div class="space-y-6">

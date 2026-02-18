@@ -9,6 +9,7 @@ import { Access } from "./components/Access";
 import { Reservation } from "./components/Reservation";
 import { Footer } from "./components/Footer";
 import { Navigation } from "./components/Navigation";
+import { LocalGuide } from "./components/LocalGuide";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <Stay />
       <Experience />
       <Activities />
+      <LocalGuide />
       <Gallery />
       <Story />
       <Access />

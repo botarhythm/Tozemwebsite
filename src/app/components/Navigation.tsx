@@ -19,6 +19,7 @@ export function Navigation() {
     { name: "宿泊", href: "#stay" },
     { name: "倉庫体験", href: "#experience" },
     { name: "アクティビティ", href: "#activities" },
+    { name: "周辺ガイド", href: "#guide" },
     { name: "ギャラリー", href: "#gallery" },
     { name: "アクセス", href: "#access" },
     { name: "ご予約", href: "#reservation" },

@@ -24,6 +24,7 @@
                     ['name' => __('宿泊', 'tozem'), 'href' => '#stay'],
                     ['name' => __('倉庫体験', 'tozem'), 'href' => '#experience'],
                     ['name' => __('アクティビティ', 'tozem'), 'href' => '#activities'],
+                    ['name' => __('周辺ガイド', 'tozem'), 'href' => '#guide'],
                     ['name' => __('ギャラリー', 'tozem'), 'href' => '#gallery'],
                     ['name' => __('アクセス', 'tozem'), 'href' => '#access'],
                     ['name' => __('ご予約', 'tozem'), 'href' => '#reservation'],

@@ -8,6 +8,7 @@
     get_template_part('parts/stay');
     get_template_part('parts/experience');
     get_template_part('parts/activities');
+    get_template_part('parts/local-guide');
     get_template_part('parts/gallery');
     get_template_part('parts/story');
     get_template_part('parts/access');

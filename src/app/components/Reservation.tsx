@@ -106,6 +106,17 @@ export function Reservation() {
                   <span className="font-medium">時間外利用:</span> ¥5,000 / 1h（要相談）
                 </p>
               </div>
+
+              <div className="bg-gray-50 p-6 space-y-4 text-sm tracking-[0.05em]">
+                <h4 className="font-medium tracking-[0.1em] border-b border-gray-200 pb-2">オプション・レンタル（税込）</h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <p><span className="font-medium">BBQ施設利用料:</span> ¥5,000</p>
+                  <p><span className="font-medium">釣竿レンタル（1日）:</span> ¥3,500</p>
+                  <p><span className="font-medium">スノーケル3点セット:</span> ¥3,500</p>
+                  <p><span className="font-medium">ライフジャケット / タモ網:</span> 各¥500</p>
+                </div>
+                <p className="text-[10px] text-gray-400">※詳細は周辺ガイドをご確認ください。現地決済となります。</p>
+              </div>
             </div>
 
             <div className="space-y-6">
