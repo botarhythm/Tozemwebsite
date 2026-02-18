@@ -1,4 +1,4 @@
-<section id="access" class="pt-32 pb-16 bg-gray-50">
+<section id="access" class="pt-32 pb-4 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-20 fade-up">
             <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em]">
@@ -9,7 +9,7 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            <div class="space-y-8 fade-up" data-delay="0">
+            <div class="space-y-6 fade-up" data-delay="0">
                 <div class="flex items-start space-x-4">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-gray-800 flex-shrink-0 mt-1" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                     <div class="space-y-2">

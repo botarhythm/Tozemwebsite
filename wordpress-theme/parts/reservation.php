@@ -1,6 +1,6 @@
-<section id="reservation" class="pt-16 pb-32 bg-white">
+<section id="reservation" class="pt-4 pb-32 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-20 fade-up">
+        <div class="text-center mb-12 fade-up">
             <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em]">
                 <?php _e('ご予約・お問い合わせ', 'tozem'); ?>
             </h2>
