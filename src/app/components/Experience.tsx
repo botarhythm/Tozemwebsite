@@ -67,6 +67,14 @@ export function Experience() {
                     <span className="w-2 h-2 bg-gray-400 rounded-full mr-3 mt-2 flex-shrink-0" />
                     <span className="tracking-[0.05em]">創作活動を通じた自己との対話</span>
                   </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3 mt-2 flex-shrink-0" />
+                    <span className="tracking-[0.05em]">屋根付きBBQ設備（有料レンタル）</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3 mt-2 flex-shrink-0" />
+                    <span className="tracking-[0.05em]">お庭での手持ち花火OK</span>
+                  </li>
                 </ul>
               </div>
 

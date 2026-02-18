@@ -12,17 +12,17 @@ const features = [
   {
     icon: Users,
     title: "定員",
-    description: "最大6名まで対応可能",
+    description: "最大10名まで対応可能",
   },
   {
     icon: Bed,
-    title: "寝室",
-    description: "和室2室＋リビング",
+    title: "間取り",
+    description: "和室2室＋洋室2室",
   },
   {
     icon: Waves,
     title: "海まで",
-    description: "徒歩3分の好立地",
+    description: "徒歩2分の好立地",
   },
 ];
 

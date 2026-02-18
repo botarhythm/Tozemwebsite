@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { useInView } from "./hooks/useInView";
-import { MapPin, Clock, Train, Car, Instagram } from "lucide-react";
+import { MapPin, Clock, Train, Car, Instagram, Mail } from "lucide-react";
 
 export function Access() {
   const { ref, isInView } = useInView({ threshold: 0.3 });
@@ -90,6 +90,19 @@ export function Access() {
                 </a>
               </div>
             </div>
+
+            <div className="flex items-start space-x-4">
+              <Mail className="text-gray-800 flex-shrink-0 mt-1" size={24} strokeWidth={1} />
+              <div className="space-y-2">
+                <h3 className="text-lg tracking-[0.1em]">Email</h3>
+                <a
+                  href="mailto:info@tozem.jp"
+                  className="text-gray-600 tracking-[0.05em] hover:text-gray-900 transition-colors"
+                >
+                  info@tozem.jp
+                </a>
+              </div>
+            </div>
           </motion.div>
 
           <motion.div
@@ -99,7 +112,7 @@ export function Access() {
             transition={{ duration: 1 }}
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3265.876542!2d139.8234567!3d34.9634789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDU3JzQ4LjUiTiAxMznCsDQ5JzI2LjQiRQ!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3136.563539341184!2d139.75641431505733!3d34.96393600809622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6017f5daa2fc7ab7%3A0xf7bf1e1827abc25c!2z6Jek44K844OgIC0g5rW36L6644Gu5Y-k5rCR5a625a6_!5e1!3m2!1sja!2sjp!4v1771390745529!5m2!1sja!2sjp"
               width="100%"
               height="100%"
               style={{ border: 0 }}

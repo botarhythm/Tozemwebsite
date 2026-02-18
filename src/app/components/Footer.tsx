@@ -1,4 +1,4 @@
-import { Instagram } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
 
 export function Footer() {
   return (
@@ -27,6 +27,13 @@ export function Footer() {
                 aria-label="Instagram"
               >
                 <Instagram size={24} strokeWidth={1} />
+              </a>
+              <a
+                href="mailto:info@tozem.jp"
+                className="text-gray-400 hover:text-white transition-colors"
+                aria-label="Email"
+              >
+                <Mail size={24} strokeWidth={1} />
               </a>
             </div>
 
