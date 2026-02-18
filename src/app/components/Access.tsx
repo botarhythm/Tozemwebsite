@@ -6,7 +6,7 @@ export function Access() {
   const { ref, isInView } = useInView({ threshold: 0.3 });
 
   return (
-    <section id="access" className="py-32 bg-gray-50" ref={ref}>
+    <section id="access" className="pt-32 pb-16 bg-gray-50" ref={ref}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-20"

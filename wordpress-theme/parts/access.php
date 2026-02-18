@@ -1,4 +1,4 @@
-<section id="access" class="py-32 bg-gray-50">
+<section id="access" class="pt-32 pb-16 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-20 fade-up">
             <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em]">
