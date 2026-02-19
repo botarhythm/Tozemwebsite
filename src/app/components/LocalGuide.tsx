@@ -183,35 +183,37 @@ export function LocalGuide() {
                             initial={{ opacity: 0, y: 30 }}
                             animate={isInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 1, delay: 0.8 }}
-                            className="bg-gray-50 p-8 rounded-lg space-y-6 h-full flex flex-col"
+                            className="space-y-8 h-full flex flex-col"
                         >
-                            <div className="flex items-center space-x-4 border-b border-gray-200 pb-4 mb-6">
+                            <div className="flex items-center space-x-4 border-b border-gray-100 pb-4">
                                 <Anchor className="text-gray-400" size={28} strokeWidth={1.5} />
                                 <h3 className="text-2xl tracking-[0.1em]">オプション・レンタル</h3>
                             </div>
-                            <div className="space-y-4">
-                                <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
-                                    <span className="text-sm">釣竿レンタル（1日）</span>
-                                    <span className="font-serif">¥3,500</span>
+                            <div className="bg-gray-50 p-8 rounded-lg space-y-6 flex-grow flex flex-col">
+                                <div className="space-y-4">
+                                    <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
+                                        <span className="text-sm">釣竿レンタル（1日）</span>
+                                        <span className="font-serif">¥3,500</span>
+                                    </div>
+                                    <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
+                                        <span className="text-sm">スノーケル3点セット（1日）</span>
+                                        <span className="font-serif">¥3,500</span>
+                                    </div>
+                                    <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
+                                        <span className="text-sm">BBQ施設利用料</span>
+                                        <span className="font-serif">¥5,000</span>
+                                    </div>
+                                    <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
+                                        <span className="text-sm">ライフジャケット / タモ網</span>
+                                        <span className="font-serif">¥500</span>
+                                    </div>
                                 </div>
-                                <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
-                                    <span className="text-sm">スノーケル3点セット（1日）</span>
-                                    <span className="font-serif">¥3,500</span>
+                                <div className="flex items-start space-x-2 text-xs text-gray-500 bg-white p-3 border border-gray-100 italic mt-auto">
+                                    <Info size={14} className="flex-shrink-0 mt-0.5" />
+                                    <p>
+                                        西川名の海は魚影豊かな岩場です。安全のためマリンシューズ・手袋・ラッシュガードの着用をおすすめします（一部無料貸出あり）。
+                                    </p>
                                 </div>
-                                <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
-                                    <span className="text-sm">BBQ施設利用料</span>
-                                    <span className="font-serif">¥5,000</span>
-                                </div>
-                                <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
-                                    <span className="text-sm">ライフジャケット / タモ網</span>
-                                    <span className="font-serif">¥500</span>
-                                </div>
-                            </div>
-                            <div className="flex items-start space-x-2 text-xs text-gray-500 bg-white p-3 border border-gray-100 italic mt-auto">
-                                <Info size={14} className="flex-shrink-0 mt-0.5" />
-                                <p>
-                                    西川名の海は魚影豊かな岩場です。安全のためマリンシューズ・手袋・ラッシュガードの着用をおすすめします（一部無料貸出あり）。
-                                </p>
                             </div>
                         </motion.div>
                     </div>
