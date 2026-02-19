@@ -189,22 +189,22 @@ export function LocalGuide() {
                                 <Anchor className="text-gray-400" size={28} strokeWidth={1.5} />
                                 <h3 className="text-2xl tracking-[0.1em]">オプション・レンタル</h3>
                             </div>
-                            <div className="bg-gray-50 p-8 rounded-lg space-y-6 flex-grow flex flex-col !mt-0">
+                            <div className="bg-gray-50 px-8 pb-8 pt-12 rounded-lg space-y-6 flex-grow flex flex-col !mt-0">
                                 <div className="space-y-4">
                                     <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
-                                        <span className="text-sm">釣竿レンタル（1日）</span>
+                                        <span className="text-sm font-medium tracking-[0.05em]">釣竿レンタル（1日）</span>
                                         <span className="font-serif">¥3,500</span>
                                     </div>
                                     <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
-                                        <span className="text-sm">スノーケル3点セット（1日）</span>
+                                        <span className="text-sm font-medium tracking-[0.05em]">スノーケル3点セット（1日）</span>
                                         <span className="font-serif">¥3,500</span>
                                     </div>
                                     <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
-                                        <span className="text-sm">BBQ施設利用料</span>
+                                        <span className="text-sm font-medium tracking-[0.05em]">BBQ施設利用料</span>
                                         <span className="font-serif">¥5,000</span>
                                     </div>
                                     <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
-                                        <span className="text-sm">ライフジャケット / タモ網</span>
+                                        <span className="text-sm font-medium tracking-[0.05em]">ライフジャケット / タモ網</span>
                                         <span className="font-serif">¥500</span>
                                     </div>
                                 </div>
