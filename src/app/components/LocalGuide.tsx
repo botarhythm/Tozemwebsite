@@ -183,7 +183,7 @@ export function LocalGuide() {
                             initial={{ opacity: 0, y: 30 }}
                             animate={isInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 1, delay: 0.8 }}
-                            className="bg-gray-50 p-8 rounded-lg space-y-6"
+                            className="bg-gray-50 p-8 rounded-lg space-y-6 h-full flex flex-col"
                         >
                             <div className="flex items-center space-x-4 border-b border-gray-200 pb-4 mb-6">
                                 <Anchor className="text-gray-400" size={28} strokeWidth={1.5} />
@@ -207,7 +207,7 @@ export function LocalGuide() {
                                     <span className="font-serif">¥500</span>
                                 </div>
                             </div>
-                            <div className="flex items-start space-x-2 text-xs text-gray-500 bg-white p-3 border border-gray-100 italic">
+                            <div className="flex items-start space-x-2 text-xs text-gray-500 bg-white p-3 border border-gray-100 italic mt-auto">
                                 <Info size={14} className="flex-shrink-0 mt-0.5" />
                                 <p>
                                     西川名の海は魚影豊かな岩場です。安全のためマリンシューズ・手袋・ラッシュガードの着用をおすすめします（一部無料貸出あり）。

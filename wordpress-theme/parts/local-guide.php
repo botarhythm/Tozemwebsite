@@ -133,7 +133,7 @@
                 </div>
 
                 <!-- Rental -->
-                <div class="bg-gray-50 p-8 rounded-lg space-y-6 fade-up" data-delay="800">
+                <div class="bg-gray-50 p-8 rounded-lg space-y-6 fade-up h-full flex flex-col" data-delay="800">
                     <div class="flex items-center space-x-4 border-b border-gray-200 pb-4 mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
                         <h3 class="text-2xl tracking-[0.1em]"><?php _e('オプション・レンタル', 'tozem'); ?></h3>
@@ -156,7 +156,7 @@
                             <span class="font-serif">¥500</span>
                         </div>
                     </div>
-                    <div class="flex items-start space-x-2 text-xs text-gray-500 bg-white p-3 border border-gray-100 italic">
+                    <div class="flex items-start space-x-2 text-xs text-gray-500 bg-white p-3 border border-gray-100 italic mt-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
                         <p>
                             <?php _e('西川名の海は魚影豊かな岩場です。安全のためマリンシューズ・手袋・ラッシュガードの着用をおすすめします（一部無料貸出あり）。', 'tozem'); ?>
