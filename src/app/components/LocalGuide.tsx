@@ -189,30 +189,32 @@ export function LocalGuide() {
                                 <Anchor className="text-gray-400" size={28} strokeWidth={1.5} />
                                 <h3 className="text-2xl tracking-[0.1em]">オプション・レンタル</h3>
                             </div>
-                            <div className="bg-gray-50 px-8 pb-8 pt-12 rounded-lg space-y-6 flex-grow flex flex-col !mt-0">
-                                <div className="space-y-4">
-                                    <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
+                            <div className="flex-grow flex flex-col space-y-8">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                                    <div className="flex justify-between items-baseline border-b border-gray-100 pb-2">
                                         <span className="text-sm font-medium tracking-[0.05em]">釣竿レンタル（1日）</span>
-                                        <span className="font-serif">¥3,500</span>
+                                        <span className="text-sm font-serif">¥3,500</span>
                                     </div>
-                                    <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
-                                        <span className="text-sm font-medium tracking-[0.05em]">スノーケル3点セット（1日）</span>
-                                        <span className="font-serif">¥3,500</span>
+                                    <div className="flex justify-between items-baseline border-b border-gray-100 pb-2">
+                                        <span className="text-sm font-medium tracking-[0.05em]">スノーケル</span>
+                                        <span className="text-sm font-serif">¥3,500</span>
                                     </div>
-                                    <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
+                                    <div className="flex justify-between items-baseline border-b border-gray-100 pb-2">
                                         <span className="text-sm font-medium tracking-[0.05em]">BBQ施設利用料</span>
-                                        <span className="font-serif">¥5,000</span>
+                                        <span className="text-sm font-serif">¥5,000</span>
                                     </div>
-                                    <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
-                                        <span className="text-sm font-medium tracking-[0.05em]">ライフジャケット / タモ網</span>
-                                        <span className="font-serif">¥500</span>
+                                    <div className="flex justify-between items-baseline border-b border-gray-100 pb-2">
+                                        <span className="text-sm font-medium tracking-[0.05em]">ライフジャケット</span>
+                                        <span className="text-sm font-serif">¥500</span>
                                     </div>
                                 </div>
-                                <div className="flex items-start space-x-2 text-xs text-gray-500 bg-white p-3 border border-gray-100 italic mt-auto">
-                                    <Info size={14} className="flex-shrink-0 mt-0.5" />
-                                    <p>
-                                        西川名の海は魚影豊かな岩場です。安全のためマリンシューズ・手袋・ラッシュガードの着用をおすすめします（一部無料貸出あり）。
-                                    </p>
+                                <div className="p-4 bg-gray-50 rounded-sm space-y-2 mt-auto">
+                                    <div className="flex items-start space-x-2 text-xs text-gray-500 italic">
+                                        <Info size={14} className="flex-shrink-0 mt-0.5" />
+                                        <p className="leading-relaxed">
+                                            西川名の海は魚影豊かな岩場です。安全のためマリンシューズ・手袋・ラッシュガードの着用をおすすめします（一部無料貸出あり）。
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </motion.div>

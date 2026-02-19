@@ -138,30 +138,32 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
                         <h3 class="text-2xl tracking-[0.1em]"><?php _e('オプション・レンタル', 'tozem'); ?></h3>
                     </div>
-                    <div class="bg-gray-50 px-8 pb-8 pt-12 rounded-lg space-y-6 flex-grow flex flex-col !mt-0">
-                        <div class="space-y-4">
-                            <div class="flex justify-between items-baseline border-b border-gray-200 pb-2">
+                    <div class="flex-grow flex flex-col space-y-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                            <div class="flex justify-between items-baseline border-b border-gray-100 pb-2">
                                 <span class="text-sm font-medium tracking-[0.05em]"><?php _e('釣竿レンタル（1日）', 'tozem'); ?></span>
-                                <span class="font-serif">¥3,500</span>
+                                <span class="text-sm font-serif">¥3,500</span>
                             </div>
-                            <div class="flex justify-between items-baseline border-b border-gray-200 pb-2">
-                                <span class="text-sm font-medium tracking-[0.05em]"><?php _e('スノーケル3点セット（1日）', 'tozem'); ?></span>
-                                <span class="font-serif">¥3,500</span>
+                            <div class="flex justify-between items-baseline border-b border-gray-100 pb-2">
+                                <span class="text-sm font-medium tracking-[0.05em]"><?php _e('スノーケル', 'tozem'); ?></span>
+                                <span class="text-sm font-serif">¥3,500</span>
                             </div>
-                            <div class="flex justify-between items-baseline border-b border-gray-200 pb-2">
+                            <div class="flex justify-between items-baseline border-b border-gray-100 pb-2">
                                 <span class="text-sm font-medium tracking-[0.05em]"><?php _e('BBQ施設利用料', 'tozem'); ?></span>
-                                <span class="font-serif">¥5,000</span>
+                                <span class="text-sm font-serif">¥5,000</span>
                             </div>
-                            <div class="flex justify-between items-baseline border-b border-gray-200 pb-2">
-                                <span class="text-sm font-medium tracking-[0.05em]"><?php _e('ライフジャケット / タモ網', 'tozem'); ?></span>
-                                <span class="font-serif">¥500</span>
+                            <div class="flex justify-between items-baseline border-b border-gray-100 pb-2">
+                                <span class="text-sm font-medium tracking-[0.05em]"><?php _e('ライフジャケット', 'tozem'); ?></span>
+                                <span class="text-sm font-serif">¥500</span>
                             </div>
                         </div>
-                        <div class="flex items-start space-x-2 text-xs text-gray-500 bg-white p-3 border border-gray-100 italic mt-auto">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-                            <p>
-                                <?php _e('西川名の海は魚影豊かな岩場です。安全のためマリンシューズ・手袋・ラッシュガードの着用をおすすめします（一部無料貸出あり）。', 'tozem'); ?>
-                            </p>
+                        <div class="p-4 bg-gray-50 rounded-sm space-y-2 mt-auto">
+                            <div class="flex items-start space-x-2 text-xs text-gray-500 italic">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                                <p class="leading-relaxed">
+                                    <?php _e('西川名の海は魚影豊かな岩場です。安全のためマリンシューズ・手袋・ラッシュガードの着用をおすすめします（一部無料貸出あり）。', 'tozem'); ?>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
