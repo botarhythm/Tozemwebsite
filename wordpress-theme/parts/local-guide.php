@@ -134,9 +134,9 @@
 
                 <!-- Rental -->
                 <div class="bg-gray-50 p-8 rounded-lg space-y-6 fade-up" data-delay="800">
-                    <div class="flex items-center space-x-3 mb-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
-                        <h3 class="text-xl tracking-[0.1em]"><?php _e('オプション・レンタル', 'tozem'); ?></h3>
+                    <div class="flex items-center space-x-4 border-b border-gray-200 pb-4 mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+                        <h3 class="text-2xl tracking-[0.1em]"><?php _e('オプション・レンタル', 'tozem'); ?></h3>
                     </div>
                     <div class="space-y-4">
                         <div class="flex justify-between items-baseline border-b border-gray-200 pb-2">

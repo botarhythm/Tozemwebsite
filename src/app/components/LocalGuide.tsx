@@ -185,9 +185,9 @@ export function LocalGuide() {
                             transition={{ duration: 1, delay: 0.8 }}
                             className="bg-gray-50 p-8 rounded-lg space-y-6"
                         >
-                            <div className="flex items-center space-x-3 mb-2">
-                                <Anchor className="text-gray-400" size={24} strokeWidth={1.5} />
-                                <h3 className="text-xl tracking-[0.1em]">オプション・レンタル</h3>
+                            <div className="flex items-center space-x-4 border-b border-gray-200 pb-4 mb-6">
+                                <Anchor className="text-gray-400" size={28} strokeWidth={1.5} />
+                                <h3 className="text-2xl tracking-[0.1em]">オプション・レンタル</h3>
                             </div>
                             <div className="space-y-4">
                                 <div className="flex justify-between items-baseline border-b border-gray-200 pb-2">
