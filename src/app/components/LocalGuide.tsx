@@ -80,7 +80,7 @@ export function LocalGuide() {
                         周辺ガイド
                     </h2>
                     <div className="w-12 h-px bg-gray-900 mx-auto mb-6" />
-                    <p className="text-gray-600 tracking-[0.1em]">Local Guide</p>
+                    <p className="text-gray-800 tracking-[0.1em]">Local Guide</p>
                 </motion.div>
 
                 <div className="max-w-6xl mx-auto space-y-24">
@@ -103,7 +103,7 @@ export function LocalGuide() {
                                             <h4 className="text-lg font-medium tracking-[0.05em]">{spot.name}</h4>
                                             <span className="text-xs text-blue-500 bg-blue-50 px-2 py-1 rounded">{spot.type}</span>
                                         </div>
-                                        <p className="text-sm text-gray-600 leading-relaxed">{spot.description}</p>
+                                        <p className="text-sm text-gray-800 leading-relaxed">{spot.description}</p>
                                     </div>
                                 ))}
                             </div>
@@ -130,19 +130,19 @@ export function LocalGuide() {
                                                 </a>
                                             )}
                                         </h4>
-                                        <p className="text-sm text-gray-600 leading-relaxed">{spot.description}</p>
+                                        <p className="text-sm text-gray-800 leading-relaxed">{spot.description}</p>
                                     </div>
                                 ))}
                                 <div className="p-4 bg-gray-50 rounded-sm space-y-3">
                                     <h5 className="text-sm font-medium flex items-center">
                                         <ShoppingCart size={16} className="mr-2" /> 釣具店・装備について
                                     </h5>
-                                    <ul className="text-xs text-gray-600 space-y-2">
+                                    <ul className="text-xs text-gray-700 space-y-2">
                                         <li>・<a href="https://instagram.com/tateyama.fishing?igshid=NTc4MTIwNjQ2YQ==" target="_blank" className="underline hover:text-gray-900">ランド館山総合館</a></li>
                                         <li>・<a href="https://yacs.jp/store/store-361/" target="_blank" className="underline hover:text-gray-900">アタックファイブ（ヤックス内）</a></li>
                                         <li>※おどや大神宮店、カインズ館山でも簡易釣具の購入が可能です。</li>
                                     </ul>
-                                    <p className="text-[10px] text-gray-500 pt-2 border-t border-gray-200">
+                                    <p className="text-[10px] text-gray-600 pt-2 border-t border-gray-200">
                                         宿ではお子様用ライフジャケットやタモ網の貸出もございます（有料）。
                                     </p>
                                 </div>
@@ -173,7 +173,7 @@ export function LocalGuide() {
                                                 </a>
                                             )}
                                         </h4>
-                                        <p className="text-xs text-gray-500 leading-relaxed">{spot.description}</p>
+                                        <p className="text-xs text-gray-700 leading-relaxed">{spot.description}</p>
                                     </div>
                                 ))}
                             </div>
@@ -209,7 +209,7 @@ export function LocalGuide() {
                                     </div>
                                 </div>
                                 <div className="p-4 bg-gray-50 rounded-sm space-y-2 mt-auto">
-                                    <div className="flex items-start space-x-2 text-xs text-gray-500 italic">
+                                    <div className="flex items-start space-x-2 text-xs text-gray-700 italic">
                                         <Info size={14} className="flex-shrink-0 mt-0.5" />
                                         <p className="leading-relaxed">
                                             西川名の海は魚影豊かな岩場です。安全のためマリンシューズ・手袋・ラッシュガードの着用をおすすめします（一部無料貸出あり）。

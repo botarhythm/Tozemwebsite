@@ -5,7 +5,7 @@
                 <?php _e('周辺ガイド', 'tozem'); ?>
             </h2>
             <div class="w-12 h-px bg-gray-900 mx-auto mb-6"></div>
-            <p class="text-gray-600 tracking-[0.1em]">Local Guide</p>
+            <p class="text-gray-800 tracking-[0.1em]">Local Guide</p>
         </div>
 
         <div class="max-w-6xl mx-auto space-y-24">
@@ -67,12 +67,12 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
                                 <?php _e('釣具店・装備について', 'tozem'); ?>
                             </h5>
-                            <ul class="text-xs text-gray-600 space-y-2">
+                            <ul class="text-xs text-gray-700 space-y-2">
                                 <li>・<a href="https://instagram.com/tateyama.fishing?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="underline hover:text-gray-900"><?php _e('ランド館山総合館', 'tozem'); ?></a></li>
                                 <li>・<a href="https://yacs.jp/store/store-361/" target="_blank" class="underline hover:text-gray-900"><?php _e('アタックファイブ（ヤックス内）', 'tozem'); ?></a></li>
                                 <li><?php _e('※おどや大神宮店、カインズ館山でも簡易釣具の購入が可能です。', 'tozem'); ?></li>
                             </ul>
-                            <p class="text-[10px] text-gray-500 pt-2 border-t border-gray-200">
+                            <p class="text-[10px] text-gray-600 pt-2 border-t border-gray-200">
                                 <?php _e('宿ではお子様用ライフジャケットやタモ網の貸出もございます（有料）。', 'tozem'); ?>
                             </p>
                         </div>
@@ -158,7 +158,7 @@
                             </div>
                         </div>
                         <div class="p-4 bg-gray-50 rounded-sm space-y-2 mt-auto">
-                            <div class="flex items-start space-x-2 text-xs text-gray-500 italic">
+                            <div class="flex items-start space-x-2 text-xs text-gray-700 italic">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
                                 <p class="leading-relaxed">
                                     <?php _e('西川名の海は魚影豊かな岩場です。安全のためマリンシューズ・手袋・ラッシュガードの着用をおすすめします（一部無料貸出あり）。', 'tozem'); ?>
