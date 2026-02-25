@@ -2,7 +2,7 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto fade-up" data-delay="200">
             <header class="text-center mb-16 md:mb-20">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl tracking-[0.2em] text-gray-900 font-light mb-6">
+                <h2 class="text-xl md:text-2xl lg:text-3xl tracking-[0.1em] text-gray-900 font-light mb-6">
                     <?php echo esc_html( get_theme_mod( 'tozem_rate_title', '宿泊料金の詳細（税込）' ) ); ?>
                 </h2>
                 <div class="w-12 h-px bg-gray-900 mx-auto mb-6" aria-hidden="true"></div>

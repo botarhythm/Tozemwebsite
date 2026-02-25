@@ -4,7 +4,7 @@
             
             <!-- Header Section -->
             <header class="space-y-6 text-center fade-up">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl tracking-[0.2em] text-gray-900">
+                <h2 class="text-2xl md:text-3xl tracking-[0.2em] text-gray-900">
                     <?php echo esc_html( get_theme_mod( 'tozem_concept_title', __('藤ゼムとは', 'tozem') ) ); ?>
                 </h2>
                 <div class="w-12 h-px bg-gray-900 mx-auto" aria-hidden="true"></div>
@@ -26,7 +26,7 @@
             </div>
 
             <!-- Features Grid -->
-            <div class="grid grid-fluid gap-12 pt-8 md:pt-12 fade-up" data-delay="600">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 pt-8 md:pt-12 fade-up" data-delay="600">
                 <article class="space-y-4 text-center">
                     <div class="text-4xl text-gray-300 font-light" aria-hidden="true">01</div>
                     <header>

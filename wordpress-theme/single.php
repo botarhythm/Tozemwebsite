@@ -22,7 +22,7 @@ get_header(); ?>
                         ?>
                     </div>
                     
-                    <h1 class="text-3xl md:text-4xl lg:text-5xl tracking-wide font-light leading-snug mb-8 text-gray-900">
+                    <h1 class="text-2xl md:text-3xl tracking-wide font-light leading-snug mb-8 text-gray-900">
                         <?php the_title(); ?>
                     </h1>
                     

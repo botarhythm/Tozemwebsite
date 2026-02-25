@@ -1,7 +1,7 @@
 <section id="stay" class="py-32 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <header class="text-center mb-16 md:mb-20 fade-up">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em] text-gray-900"><?php echo esc_html( get_theme_mod( 'tozem_stay_title', __('宿泊', 'tozem') ) ); ?></h2>
+            <h2 class="text-2xl md:text-3xl mb-6 tracking-[0.2em] text-gray-900"><?php echo esc_html( get_theme_mod( 'tozem_stay_title', __('宿泊', 'tozem') ) ); ?></h2>
             <div class="w-12 h-px bg-gray-900 mx-auto mb-6" aria-hidden="true"></div>
             <p class="text-gray-600 tracking-[0.1em] uppercase">Stay</p>
         </header>
