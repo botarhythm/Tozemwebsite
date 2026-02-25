@@ -1,14 +1,16 @@
 <?php
 
 function tozem_theme_scripts() {
+    $theme_version = wp_get_theme()->get( 'Version' );
+
     // Enqueue Tailwind (compiled)
-    wp_enqueue_style( 'tozem-tailwind', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0.0', 'all' );
+    wp_enqueue_style( 'tozem-tailwind', get_template_directory_uri() . '/assets/css/style.css', array(), $theme_version, 'all' );
     
-    // Enqueue Main Style (Theme metadata)
-    wp_enqueue_style( 'tozem-style', get_stylesheet_uri() );
+    // Enqueue Main Style (Theme metadata + CF7 overrides)
+    wp_enqueue_style( 'tozem-style', get_stylesheet_uri(), array('tozem-tailwind'), $theme_version );
 
     // Enqueue Custom JS
-    wp_enqueue_script( 'tozem-script', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_script( 'tozem-script', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), $theme_version, true );
 }
 add_action( 'wp_enqueue_scripts', 'tozem_theme_scripts' );
 
