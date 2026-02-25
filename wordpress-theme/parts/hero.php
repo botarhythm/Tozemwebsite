@@ -14,7 +14,7 @@
     <!-- Content -->
     <div class="relative h-full flex flex-col items-center justify-center text-center px-4">
         <header class="space-y-4 md:space-y-8 fade-up" data-delay="0">
-            <h1 class="text-4xl md:text-5xl lg:text-7xl text-white tracking-[0.3em] fade-up" data-delay="300">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl text-white tracking-[0.3em] fade-up" data-delay="300">
                 <?php echo esc_html( get_theme_mod( 'tozem_hero_title', __('藤ゼム', 'tozem') ) ); ?>
             </h1>
             
@@ -22,7 +22,7 @@
                 <?php echo esc_html( get_theme_mod( 'tozem_hero_subtitle', 'TOZEM' ) ); ?>
             </p>
 
-            <p class="text-base md:text-lg lg:text-xl text-white/95 tracking-[0.15em] leading-relaxed max-w-2xl fade-up" data-delay="900">
+            <p class="text-sm md:text-base lg:text-lg text-white/95 tracking-[0.15em] leading-relaxed max-w-2xl fade-up" data-delay="900">
                 <?php echo nl2br( esc_html( get_theme_mod( 'tozem_hero_catch', __('海のそばで、静かに過ごす時間', 'tozem') ) ) ); ?>
             </p>
         </header>
