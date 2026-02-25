@@ -4,7 +4,7 @@ Theme URI: https://tozem.net
 Author: Botarhythm AI Studio
 Author URI: https://botarhythm.com
 Description: Custom theme for Tozem Website
-Version: 4.1
+Version: 4.2
 Text Domain: tozem
 */
 
@@ -118,7 +118,7 @@ Text Domain: tozem
     display: block !important;
     width: 100% !important;
     max-width: none !important;
-    background-color: #111827 !important;
+    background-color: var(--color-black, #111827) !important;
     /* gray-900 */
     color: #ffffff !important;
     padding: 1rem 3rem !important;
@@ -156,4 +156,14 @@ Text Domain: tozem
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* ============================================================
+   Smash Balloon: Admin-only error messages
+   Force-hidden on the front end as a defensive fallback.
+   These should never be visible to site visitors.
+   ============================================================ */
+.sbi_admin_error,
+.sbi-sb-link+.sbi_admin_error {
+    display: none !important;
 }

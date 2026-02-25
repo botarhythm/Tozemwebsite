@@ -117,7 +117,7 @@
                 <?php foreach ($nav_items as $item) : ?>
                     <li>
                         <a href="<?php echo esc_url($item['href']); ?>" class="mobile-nav-link block text-sm tracking-[0.15em] transition-colors duration-300 text-white">
-                            <?php echo esc_html($item['name']); ?>
+                            <?php echo esc_html($item['name_ja']); ?>
                         </a>
                     </li>
                 <?php endforeach; ?>

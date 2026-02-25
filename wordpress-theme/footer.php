@@ -6,10 +6,19 @@
             <div class="w-8 h-px bg-gray-900 mx-auto"></div>
         </div>
         <div class="fade-up" data-delay="200">
-            <?php 
+            <?php
             $instagram_shortcode = get_theme_mod( 'tozem_instagram_shortcode', '[instagram-feed]' );
-            if ( !empty($instagram_shortcode) ) {
+            // Only render if the Smash Balloon plugin is active and a shortcode is configured
+            if ( ! empty( $instagram_shortcode ) && function_exists( 'sb_instagram_feed_init' ) ) {
+                // Capture output to detect and suppress admin error injections
+                ob_start();
                 echo do_shortcode( $instagram_shortcode );
+                $feed_output = ob_get_clean();
+
+                // If Smash Balloon injected an admin error div, suppress it entirely
+                if ( strpos( $feed_output, 'sbi_admin_error' ) === false ) {
+                    echo $feed_output;
+                }
             }
             ?>
         </div>

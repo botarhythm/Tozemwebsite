@@ -97,3 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const animatedElements = document.querySelectorAll('.fade-up, .grow-y');
     animatedElements.forEach(el => observer.observe(el));
 });
+
+// Developer Signature (moved from PHP inline script for CSP compliance)
+console.log('%cDesigned & Developed by', 'color: #6b7280; font-size: 12px; font-weight: bold;');
+console.log('%cBotarhythm AI Studio', 'color: #111827; font-size: 24px; font-weight: 900; letter-spacing: -0.05em; padding: 4px 0;');

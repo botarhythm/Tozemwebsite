@@ -113,11 +113,6 @@ require get_template_directory() . '/inc/customizer.php';
 
 /**
  * Developer Signature
+ * NOTE: Console branding is intentionally kept in assets/js/main.js
+ * to avoid inline script CSP violations. This PHP hook is removed.
  */
-function tozem_developer_signature() {
-    echo '<script>
-        console.log("%cDesigned & Developed by", "color: #6b7280; font-size: 12px; font-weight: bold;");
-        console.log("%cBotarhythm AI Studio", "color: #111827; font-size: 24px; font-weight: 900; letter-spacing: -0.05em; padding: 4px 0;");
-    </script>';
-}
-add_action('wp_footer', 'tozem_developer_signature', 100);
