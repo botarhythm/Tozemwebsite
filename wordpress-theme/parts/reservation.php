@@ -20,7 +20,7 @@
                 <div class="space-y-10">
                     <div class="text-center space-y-4">
                         <h3 class="text-xl md:text-2xl tracking-[0.2em]"><?php _e('宿泊料金の詳細（税込）', 'tozem'); ?></h3>
-                        <p class="text-[10px] md:text-xs text-gray-400 tracking-[0.1em] uppercase"><?php _e('※1棟貸切 4名様までの基本料金です', 'tozem'); ?></p>
+                        <p class="text-xs md:text-sm text-gray-400 tracking-[0.1em] uppercase"><?php _e('※1棟貸切 4名様までの基本料金です', 'tozem'); ?></p>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border-y border-gray-100 text-center">
@@ -31,12 +31,12 @@
                         <div class="py-6 md:py-8 border-b border-gray-100 md:border-b-0 md:border-r border-gray-100 space-y-3">
                             <h4 class="text-sm font-medium tracking-[0.1em] text-gray-500"><?php _e('ハイシーズン', 'tozem'); ?></h4>
                             <p class="text-3xl font-serif tracking-[0.05em]"><?php echo esc_html( get_theme_mod( 'tozem_price_high', '¥46,000~' ) ); ?></p>
-                            <p class="text-[10px] text-gray-400">7/13-9/30, GW</p>
+                            <p class="text-xs text-gray-400">7/13-9/30, GW</p>
                         </div>
                         <div class="py-6 md:py-8 space-y-3">
                             <h4 class="text-sm font-medium tracking-[0.1em] text-gray-500"><?php _e('特定日', 'tozem'); ?></h4>
                             <p class="text-3xl font-serif tracking-[0.05em]"><?php echo esc_html( get_theme_mod( 'tozem_price_peak', '¥52,000~' ) ); ?></p>
-                            <p class="text-[10px] text-gray-400">8/9-17, 12/20-1/5</p>
+                            <p class="text-xs text-gray-400">8/9-17, 12/20-1/5</p>
                         </div>
                     </div>
 
@@ -79,7 +79,7 @@
                             endforeach; 
                             ?>
                         </div>
-                        <p class="text-[10px] text-gray-400 text-center"><?php _e('※詳細は周辺ガイドをご確認ください。現地決済となります。', 'tozem'); ?></p>
+                        <p class="text-xs md:text-sm text-gray-400 text-center"><?php _e('※詳細は周辺ガイドをご確認ください。現地決済となります。', 'tozem'); ?></p>
                     </div>
                 </div>
 

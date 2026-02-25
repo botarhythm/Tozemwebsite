@@ -72,7 +72,7 @@
                                 <li>・<a href="https://yacs.jp/store/store-361/" target="_blank" class="underline hover:text-gray-900"><?php _e('アタックファイブ（ヤックス内）', 'tozem'); ?></a></li>
                                 <li><?php _e('※おどや大神宮店、カインズ館山でも簡易釣具の購入が可能です。', 'tozem'); ?></li>
                             </ul>
-                            <p class="text-[10px] text-gray-600 pt-2 border-t border-gray-200">
+                            <p class="text-xs text-gray-600 pt-2 border-t border-gray-200">
                                 <?php _e('宿ではお子様用ライフジャケットやタモ網の貸出もございます（有料）。', 'tozem'); ?>
                             </p>
                         </div>
