@@ -1,3 +1,7 @@
+<!-- 
+  Designed and Developed by Botarhythm AI Studio
+  https://botarhythm.com
+-->
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>

@@ -110,3 +110,15 @@ add_filter('wpcf7_autop_or_not', '__return_false');
  * Customizer Additions
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Developer Signature
+ */
+function tozem_developer_signature() {
+    echo '<script>
+        console.log("%cDesigned & Developed by", "color: #6b7280; font-size: 12px; font-weight: bold;");
+        console.log("%cBotarhythm AI Studio", "color: #111827; font-size: 24px; font-weight: 900; letter-spacing: -0.05em; padding: 4px 0;");
+        console.log("%chttps://botarhythm.com", "color: #3b82f6; font-size: 12px;");
+    </script>';
+}
+add_action('wp_footer', 'tozem_developer_signature', 100);
