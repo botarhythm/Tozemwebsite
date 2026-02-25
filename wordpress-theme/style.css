@@ -4,7 +4,7 @@ Theme URI: https://tozem.net
 Author: Botarhythm AI Studio
 Author URI: https://botarhythm.com
 Description: Custom theme for Tozem Website
-Version: 3.5
+Version: 3.6
 Text Domain: tozem
 */
 
@@ -39,12 +39,20 @@ Text Domain: tozem
     width: 100%;
 }
 
+/* ただし、人数などの数字入力欄のラッパーはインライン化して横並びを維持 */
+.wpcf7-form-control-wrap:has(input[type="number"]) {
+    display: inline-block;
+    width: auto;
+    margin: 0 0.5rem;
+}
+
 /* 各種入力欄（テキスト、メール、テキストエリア等）の全幅化と装飾 */
 .wpcf7 .wpcf7-text,
 .wpcf7 .wpcf7-email,
 .wpcf7 .wpcf7-textarea,
 .wpcf7 .wpcf7-date,
-.wpcf7 .wpcf7-select {
+.wpcf7 .wpcf7-select,
+.wpcf7 .wpcf7-number {
     width: 100% !important;
     max-width: 100%;
     padding: 0.75rem 1rem;
@@ -62,12 +70,21 @@ Text Domain: tozem
     display: block;
 }
 
+/* 数字入力欄（人数など）の固有スタイル */
+.wpcf7 .wpcf7-number {
+    width: 80px !important;
+    display: inline-block !important;
+    padding: 0.5rem;
+    text-align: right;
+}
+
 /* フォーカス時のスタイル */
 .wpcf7 .wpcf7-text:focus,
 .wpcf7 .wpcf7-email:focus,
 .wpcf7 .wpcf7-textarea:focus,
 .wpcf7 .wpcf7-date:focus,
-.wpcf7 .wpcf7-select:focus {
+.wpcf7 .wpcf7-select:focus,
+.wpcf7 .wpcf7-number:focus {
     outline: none;
     border-color: #111827;
     /* gray-900 (テーマカラー) */
@@ -86,6 +103,12 @@ Text Domain: tozem
 .wpcf7 textarea,
 .wpcf7 select {
     width: 100% !important;
+    max-width: none !important;
+}
+
+/* 数字入力は全幅にしない */
+.wpcf7 input[type="number"] {
+    width: 80px !important;
     max-width: none !important;
 }
 
