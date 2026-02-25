@@ -4,6 +4,7 @@
     <?php
     // Content will be migrated here part by part
     get_template_part('parts/hero');
+    get_template_part('parts/news');
     get_template_part('parts/concept');
     get_template_part('parts/stay');
     get_template_part('parts/experience');

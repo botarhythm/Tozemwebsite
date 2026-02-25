@@ -1,81 +1,100 @@
-<section id="reservation" class="pt-4 pb-32 bg-white">
+<section id="reservation" class="pt-32 pb-32 bg-white" style="padding-top: 8rem;">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12 fade-up">
             <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em]">
-                <?php _e('ご予約・お問い合わせ', 'tozem'); ?>
+                <?php echo esc_html( get_theme_mod( 'tozem_res_title', __('ご予約・お問い合わせ', 'tozem') ) ); ?>
             </h2>
             <div class="w-12 h-px bg-gray-900 mx-auto mb-6"></div>
-            <p class="text-gray-600 tracking-[0.1em]">Reservation</p>
+            <p class="text-gray-600 tracking-[0.1em]"><?php echo esc_html( get_theme_mod( 'tozem_res_subtitle', 'Reservation' ) ); ?></p>
         </div>
 
         <div class="max-w-2xl mx-auto fade-up" data-delay="200">
             <div class="mb-12 text-center space-y-4">
                 <p class="text-gray-700 tracking-[0.05em] leading-relaxed">
-                    <?php _e('ご予約・ご質問は下記フォームよりお問い合わせください。<br />3営業日以内にご連絡いたします。', 'tozem'); ?>
+                    <?php echo nl2br( esc_html( get_theme_mod( 'tozem_res_text', __("ご予約・ご質問は下記フォームよりお問い合わせください。\n3営業日以内にご連絡いたします。", 'tozem') ) ) ); ?>
                 </p>
             </div>
 
             <!-- Pricing Info -->
-            <div class="mb-20 space-y-12 fade-up" data-delay="200">
-                <div class="space-y-6">
-                    <h3 class="text-xl tracking-[0.1em] text-center"><?php _e('宿泊料金（税込）', 'tozem'); ?></h3>
-                    <p class="text-sm text-center text-gray-500"><?php _e('※1棟貸切 4名様までの基本料金です', 'tozem'); ?></p>
+            <div class="mt-32 md:mt-40 mb-20 space-y-16 fade-up" data-delay="200">
+                <div class="space-y-10">
+                    <div class="text-center space-y-4">
+                        <h3 class="text-xl md:text-2xl tracking-[0.2em]"><?php _e('宿泊料金の詳細（税込）', 'tozem'); ?></h3>
+                        <p class="text-[10px] md:text-xs text-gray-400 tracking-[0.1em] uppercase"><?php _e('※1棟貸切 4名様までの基本料金です', 'tozem'); ?></p>
+                    </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                        <div class="p-6 bg-gray-50 space-y-2">
-                            <h4 class="font-medium tracking-[0.1em]"><?php _e('通常日', 'tozem'); ?></h4>
-                            <p class="text-2xl font-serif">¥40,000~</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border-y border-gray-100 text-center">
+                        <div class="py-6 md:py-8 border-b border-gray-100 md:border-b-0 md:border-r border-gray-100 space-y-3">
+                            <h4 class="text-sm font-medium tracking-[0.1em] text-gray-500"><?php _e('通常日', 'tozem'); ?></h4>
+                            <p class="text-3xl font-serif tracking-[0.05em]"><?php echo esc_html( get_theme_mod( 'tozem_price_regular', '¥40,000~' ) ); ?></p>
                         </div>
-                        <div class="p-6 bg-gray-50 space-y-2">
-                            <h4 class="font-medium tracking-[0.1em]"><?php _e('ハイシーズン', 'tozem'); ?></h4>
-                            <p class="text-2xl font-serif">¥46,000~</p>
-                            <p class="text-xs text-gray-500">7/13-9/30, GW</p>
+                        <div class="py-6 md:py-8 border-b border-gray-100 md:border-b-0 md:border-r border-gray-100 space-y-3">
+                            <h4 class="text-sm font-medium tracking-[0.1em] text-gray-500"><?php _e('ハイシーズン', 'tozem'); ?></h4>
+                            <p class="text-3xl font-serif tracking-[0.05em]"><?php echo esc_html( get_theme_mod( 'tozem_price_high', '¥46,000~' ) ); ?></p>
+                            <p class="text-[10px] text-gray-400">7/13-9/30, GW</p>
                         </div>
-                        <div class="p-6 bg-gray-50 space-y-2">
-                            <h4 class="font-medium tracking-[0.1em]"><?php _e('特定日', 'tozem'); ?></h4>
-                            <p class="text-2xl font-serif">¥52,000~</p>
-                            <p class="text-xs text-gray-500">8/9-17, 12/20-1/5</p>
+                        <div class="py-6 md:py-8 space-y-3">
+                            <h4 class="text-sm font-medium tracking-[0.1em] text-gray-500"><?php _e('特定日', 'tozem'); ?></h4>
+                            <p class="text-3xl font-serif tracking-[0.05em]"><?php echo esc_html( get_theme_mod( 'tozem_price_peak', '¥52,000~' ) ); ?></p>
+                            <p class="text-[10px] text-gray-400">8/9-17, 12/20-1/5</p>
                         </div>
                     </div>
 
-                    <div class="bg-gray-50 p-6 space-y-4 text-sm tracking-[0.05em]">
-                        <p>
-                            <span class="font-medium"><?php _e('追加料金（1名様あたり）:', 'tozem'); ?></span><br/>
-                            <?php _e('大人（中学生以上）: ¥9,000 / 子供（3歳以上）: ¥5,000', 'tozem'); ?><br/>
-                            <?php _e('※2歳以下（添い寝）は無料', 'tozem'); ?>
+                    <div class="space-y-6 text-sm tracking-[0.05em] text-gray-600 max-w-xl mx-auto">
+                        <p class="flex flex-col md:flex-row md:justify-between items-center text-center md:text-left gap-2 py-4 border-b border-gray-50">
+                            <span class="font-medium text-gray-900"><?php _e('追加料金（1名様あたり）', 'tozem'); ?></span>
+                            <span><?php echo esc_html( get_theme_mod( 'tozem_price_extra', '大人: ¥9,000 / 子供: ¥5,000' ) ); ?></span>
                         </p>
-                        <p>
-                            <span class="font-medium"><?php _e('連泊割引:', 'tozem'); ?></span> <?php _e('2泊目以降 ¥3,000 引き（清掃なし）', 'tozem'); ?>
+                        <p class="flex flex-col md:flex-row md:justify-between items-center text-center md:text-left gap-2 py-4 border-b border-gray-50">
+                            <span class="font-medium text-gray-900"><?php _e('連泊割引', 'tozem'); ?></span>
+                            <span><?php echo esc_html( get_theme_mod( 'tozem_price_consecutive', '2泊目以降 ¥3,000 引き（清掃なし）' ) ); ?></span>
                         </p>
-                        <p>
-                            <span class="font-medium"><?php _e('時間外利用:', 'tozem'); ?></span> <?php _e('¥5,000 / 1h（要相談）', 'tozem'); ?>
+                        <p class="flex flex-col md:flex-row md:justify-between items-center text-center md:text-left gap-2 py-4 border-b border-gray-50">
+                            <span class="font-medium text-gray-900"><?php _e('時間外利用', 'tozem'); ?></span>
+                            <span><?php echo esc_html( get_theme_mod( 'tozem_price_overtime', '¥5,000 / 1h（要相談）' ) ); ?></span>
                         </p>
                     </div>
 
-                    <div class="bg-gray-50 p-6 space-y-4 text-sm tracking-[0.05em]">
-                        <h4 class="font-medium tracking-[0.1em] border-b border-gray-200 pb-2"><?php _e('オプション・レンタル（税込）', 'tozem'); ?></h4>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <p><span class="font-medium"><?php _e('BBQ施設利用料:', 'tozem'); ?></span> ¥5,000</p>
-                            <p><span class="font-medium"><?php _e('釣竿レンタル（1日）:', 'tozem'); ?></span> ¥3,500</p>
-                            <p><span class="font-medium"><?php _e('スノーケル3点セット:', 'tozem'); ?></span> ¥3,500</p>
-                            <p><span class="font-medium"><?php _e('ライフジャケット / タモ網:', 'tozem'); ?></span> 各¥500</p>
+                    <div class="pt-8 space-y-8">
+                        <div class="text-center space-y-2">
+                           <h4 class="text-lg tracking-[0.15em]"><?php _e('オプション・レンタル（税込）', 'tozem'); ?></h4>
+                           <div class="w-8 h-px bg-gray-200 mx-auto"></div>
                         </div>
-                        <p class="text-[10px] text-gray-400"><?php _e('※詳細は周辺ガイドをご確認ください。現地決済となります。', 'tozem'); ?></p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-sm tracking-[0.05em] text-gray-600 max-w-xl mx-auto">
+                            <?php
+                            $options_text = get_theme_mod( 'tozem_options_list', "BBQ施設利用料: ¥5,000\n釣竿レンタル（1日）: ¥3,500\nスノーケル3点セット: ¥3,500\nライフジャケット / タモ網: 各¥500" );
+                            $options = explode("\n", $options_text);
+                            foreach($options as $option): 
+                                if(trim($option)):
+                                    $parts = explode(':', $option);
+                                    $label = trim($parts[0]);
+                                    $price = isset($parts[1]) ? trim($parts[1]) : '';
+                            ?>
+                                <div class="flex justify-between py-2 border-b border-gray-50">
+                                    <span class="font-medium text-gray-900"><?php echo esc_html($label); ?></span>
+                                    <span><?php echo esc_html($price); ?></span>
+                                </div>
+                            <?php 
+                                endif;
+                            endforeach; 
+                            ?>
+                        </div>
+                        <p class="text-[10px] text-gray-400 text-center"><?php _e('※詳細は周辺ガイドをご確認ください。現地決済となります。', 'tozem'); ?></p>
                     </div>
                 </div>
 
-                <div class="space-y-6">
+                <div class="space-y-6 pt-12 border-t border-gray-100 mt-20">
                     <h3 class="text-xl tracking-[0.1em] text-center"><?php _e('キャンセルポリシー', 'tozem'); ?></h3>
-                    <div class="max-w-md mx-auto bg-gray-50 p-6 text-sm tracking-[0.05em] space-y-2">
-                        <div class="flex justify-between border-b border-gray-200 pb-2">
+                    <div class="max-w-md mx-auto text-sm tracking-[0.05em] space-y-2">
+                        <div class="flex justify-between border-b border-gray-50 pb-2">
                             <span><?php _e('30日〜15日前', 'tozem'); ?></span>
                             <span>10%</span>
                         </div>
-                        <div class="flex justify-between border-b border-gray-200 pb-2">
+                        <div class="flex justify-between border-b border-gray-50 pb-2">
                             <span><?php _e('14日〜8日前', 'tozem'); ?></span>
                             <span>50%</span>
                         </div>
-                        <div class="flex justify-between border-b border-gray-200 pb-2">
+                        <div class="flex justify-between border-b border-gray-50 pb-2">
                             <span><?php _e('7日〜3日前', 'tozem'); ?></span>
                             <span>80%</span>
                         </div>
@@ -91,84 +110,19 @@
             </div>
 
             <!-- Note: This form needs a backend handler or a WordPress plugin (like Contact Form 7) to function. -->
-            <form action="" method="post" class="space-y-6">
-                <div>
-                    <label class="block text-sm tracking-[0.1em] mb-2">
-                        <?php _e('お名前', 'tozem'); ?> <span class="text-red-500">*</span>
-                    </label>
-                    <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 focus:border-gray-900 focus:outline-none transition-colors" />
-                </div>
-
-                <div>
-                    <label class="block text-sm tracking-[0.1em] mb-2">
-                        <?php _e('メールアドレス', 'tozem'); ?> <span class="text-red-500">*</span>
-                    </label>
-                    <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 focus:border-gray-900 focus:outline-none transition-colors" />
-                </div>
-
-                <div>
-                    <label class="block text-sm tracking-[0.1em] mb-2">
-                        <?php _e('電話番号', 'tozem'); ?> <span class="text-red-500">*</span>
-                    </label>
-                    <input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 focus:border-gray-900 focus:outline-none transition-colors" />
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-sm tracking-[0.1em] mb-2">
-                            <?php _e('チェックイン', 'tozem'); ?> <span class="text-red-500">*</span>
-                        </label>
-                        <input type="date" name="checkin" required class="w-full px-4 py-3 border border-gray-300 focus:border-gray-900 focus:outline-none transition-colors" />
-                    </div>
-
-                    <div>
-                        <label class="block text-sm tracking-[0.1em] mb-2">
-                            <?php _e('チェックアウト', 'tozem'); ?> <span class="text-red-500">*</span>
-                        </label>
-                        <input type="date" name="checkout" required class="w-full px-4 py-3 border border-gray-300 focus:border-gray-900 focus:outline-none transition-colors" />
-                    </div>
-                </div>
-
-                <div>
-                    <label class="block text-sm tracking-[0.1em] mb-2">
-                        <?php _e('人数', 'tozem'); ?> <span class="text-red-500">*</span>
-                    </label>
-                    <select name="guests" required class="w-full px-4 py-3 border border-gray-300 focus:border-gray-900 focus:outline-none transition-colors">
-                        <option value="1"><?php _e('1名', 'tozem'); ?></option>
-                        <option value="2" selected><?php _e('2名', 'tozem'); ?></option>
-                        <option value="3"><?php _e('3名', 'tozem'); ?></option>
-                        <option value="4"><?php _e('4名', 'tozem'); ?></option>
-                        <option value="5"><?php _e('5名', 'tozem'); ?></option>
-                        <option value="6"><?php _e('6名', 'tozem'); ?></option>
-                        <option value="7"><?php _e('7名', 'tozem'); ?></option>
-                        <option value="8"><?php _e('8名', 'tozem'); ?></option>
-                        <option value="9"><?php _e('9名', 'tozem'); ?></option>
-                        <option value="10"><?php _e('10名', 'tozem'); ?></option>
-                    </select>
-                </div>
-
-                <div>
-                    <label class="block text-sm tracking-[0.1em] mb-2">
-                        <?php _e('倉庫体験の希望', 'tozem'); ?>
-                    </label>
-                    <select name="experience" class="w-full px-4 py-3 border border-gray-300 focus:border-gray-900 focus:outline-none transition-colors">
-                        <option value="なし"><?php _e('希望しない', 'tozem'); ?></option>
-                        <option value="希望する"><?php _e('希望する', 'tozem'); ?></option>
-                        <option value="詳細を知りたい"><?php _e('詳細を知りたい', 'tozem'); ?></option>
-                    </select>
-                </div>
-
-                <div>
-                    <label class="block text-sm tracking-[0.1em] mb-2">
-                        <?php _e('メッセージ', 'tozem'); ?>
-                    </label>
-                    <textarea name="message" rows="5" placeholder="<?php _e('ご質問やご要望がございましたらお書きください', 'tozem'); ?>" class="w-full px-4 py-3 border border-gray-300 focus:border-gray-900 focus:outline-none transition-colors resize-none"></textarea>
-                </div>
-
-                <button type="submit" class="w-full py-4 bg-gray-900 text-white tracking-[0.2em] hover:bg-gray-800 transition-colors duration-300">
-                    <?php _e('送信する', 'tozem'); ?>
-                </button>
-            </form>
+            <div class="mt-12 bg-gray-50 p-8 sm:p-12 md:p-16 fade-up" data-delay="300">
+                <?php 
+                // Display Contact Form 7
+                // Customizer setting 'tozem_res_cf7_shortcode' can be used to override the default shortcode string.
+                $cf7_shortcode = get_theme_mod( 'tozem_res_cf7_shortcode', '[contact-form-7 id="9999999" title="ご予約・お問い合わせ"]' );
+                
+                if ( !empty($cf7_shortcode) ) {
+                    echo do_shortcode( $cf7_shortcode );
+                } else {
+                    echo '<p class="text-center text-red-500">Contact Form 7のショートコードが設定されていません。カスタマイザーから設定してください。</p>';
+                }
+                ?>
+            </div>
         </div>
     </div>
 </section>

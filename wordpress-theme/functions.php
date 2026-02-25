@@ -16,8 +16,55 @@ function tozem_theme_setup() {
     load_theme_textdomain( 'tozem', get_template_directory() . '/languages' );
     add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'responsive-embeds' );
+    add_theme_support( 'editor-styles' );
+    add_theme_support( 'html5', array( 'style', 'script' ) );
+    add_theme_support( 'align-wide' );
+
+    // Register Navigation Menus
+    register_nav_menus( array(
+        'header-menu' => __( 'ヘッダーメニュー', 'tozem' ),
+    ) );
 }
 add_action( 'after_setup_theme', 'tozem_theme_setup' );
+
+/**
+ * Add Tailwind classes to menu links
+ */
+function tozem_nav_menu_link_attributes( $atts, $item, $args ) {
+    if ( $args->theme_location == 'header-menu' ) {
+            // Base Tailwind classes
+            $classes = 'nav-link text-sm tracking-[0.15em] transition-colors duration-300 hover:opacity-60 text-white flex flex-col items-center justify-center text-center';
+            
+            // Adjust for mobile menu context
+            if ( isset( $args->is_mobile_menu ) && $args->is_mobile_menu ) {
+                $classes = 'mobile-nav-link block text-sm tracking-[0.15em] transition-colors duration-300 text-white text-center';
+            }
+
+            $atts['class'] = $classes;
+    }
+    return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'tozem_nav_menu_link_attributes', 10, 3 );
+
+/**
+ * Support for menu subtitles using the '|' separator
+ */
+function tozem_nav_menu_item_title( $title, $item, $args, $depth ) {
+    if ( $args->theme_location == 'header-menu' && strpos( $title, '|' ) !== false ) {
+        $parts = explode( '|', $title );
+        $main_title = trim( $parts[0] );
+        $subtitle = trim( $parts[1] );
+        
+        $title = sprintf(
+            '<span class="main-title font-medium">%s</span><span class="subtitle block text-[10px] opacity-60 mt-1 uppercase font-normal tracking-[0.2em]">%s</span>',
+            esc_html( $main_title ),
+            esc_html( $subtitle )
+        );
+    }
+    return $title;
+}
+add_filter( 'nav_menu_item_title', 'tozem_nav_menu_item_title', 10, 4 );
 
 /**
  * Output Schema.org JSON-LD for SEO/AIEO
@@ -51,3 +98,8 @@ function tozem_add_structured_data() {
     echo '<script type="application/ld+json">' . json_encode($schema, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . '</script>' . "\n";
 }
 add_action('wp_head', 'tozem_add_structured_data');
+
+/**
+ * Customizer Additions
+ */
+require get_template_directory() . '/inc/customizer.php';

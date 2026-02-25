@@ -1,4 +1,4 @@
-<section id="guide" class="py-32 bg-white">
+<section id="guide" class="py-32 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-20 fade-up">
             <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em]">
@@ -12,7 +12,7 @@
             <!-- Sea & Fishing -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
                 <!-- Sea Spots -->
-                <div class="space-y-8 fade-up" data-delay="200">
+                <div class="fade-up" style="background-color: white; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #f3f4f6; display: flex; flex-direction: column; gap: 2rem;" data-delay="200">
                     <div class="flex items-center space-x-4 border-b border-gray-100 pb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"><path d="M2 6c.6.5 1.2 1 2.5 1s2.5-1 4-1 2.6 1 4 1 2.5-1 4-1 2.5 1 4 1"/><path d="M2 12c.6.5 1.2 1 2.5 1s2.5-1 4-1 2.6 1 4 1 2.5-1 4-1 2.5 1 4 1"/><path d="M2 18c.6.5 1.2 1 2.5 1s2.5-1 4-1 2.6 1 4 1 2.5-1 4-1 2.5 1 4 1"/></svg>
                         <h3 class="text-2xl tracking-[0.1em]"><?php _e('海スポット', 'tozem'); ?></h3>
@@ -43,7 +43,7 @@
                 </div>
 
                 <!-- Fishing Spots -->
-                <div class="space-y-8 fade-up" data-delay="400">
+                <div class="fade-up" style="background-color: white; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #f3f4f6; display: flex; flex-direction: column; gap: 2rem;" data-delay="400">
                     <div class="flex items-center space-x-4 border-b border-gray-100 pb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-500"><path d="M7 2a2 2 0 0 1-2 2v2a2 2 0 1 1-4 0V4a2 2 0 0 1 2-2z"/><path d="M7 2h10"/><path d="M17 2a2 2 0 0 1 2 2v2a2 2 0 1 1 4 0V4a2 2 0 0 1-2-2z"/><path d="M7 13a2 2 0 0 1-2 2v2a2 2 0 1 1-4 0v-2a2 2 0 0 1 2-2z"/><path d="M7 13h10"/><path d="M17 13a2 2 0 0 1 2 2v2a2 2 0 1 1 4 0v-2a2 2 0 0 1-2-2z"/><path d="M21 2c0 2-2 2-2 2"/><path d="M3 2c0 2 2 2 2 2"/><path d="M21 13c0 2-2 2-2 2"/><path d="M3 13c0 2 2 2 2 2"/></svg>
                         <h3 class="text-2xl tracking-[0.1em]"><?php _e('釣りスポット', 'tozem'); ?></h3>
@@ -83,7 +83,7 @@
             <!-- Shopping & Rental -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
                 <!-- Shopping -->
-                <div class="space-y-8 fade-up" data-delay="600">
+                <div class="fade-up" style="background-color: white; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #f3f4f6; display: flex; flex-direction: column; gap: 2rem;" data-delay="600">
                     <div class="flex items-center space-x-4 border-b border-gray-100 pb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-orange-400"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
                         <h3 class="text-2xl tracking-[0.1em]"><?php _e('お買い物・産直', 'tozem'); ?></h3>
@@ -133,35 +133,38 @@
                 </div>
 
                 <!-- Rental -->
-                <div class="space-y-8 fade-up h-full flex flex-col" data-delay="800">
+                <div class="fade-up h-full flex flex-col" style="background-color: white; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #f3f4f6; display: flex; flex-direction: column; gap: 2rem;" data-delay="800">
                     <div class="flex items-center space-x-4 border-b border-gray-100 pb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
-                        <h3 class="text-2xl tracking-[0.1em]"><?php _e('オプション・レンタル', 'tozem'); ?></h3>
+                        <h3 class="text-2xl tracking-[0.1em]"><?php echo esc_html( get_theme_mod( 'tozem_opt_title', __('オプション・レンタル', 'tozem') ) ); ?></h3>
                     </div>
                     <div class="flex-grow flex flex-col space-y-8">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
-                            <div class="flex justify-between items-baseline border-b border-gray-100 pb-2">
-                                <span class="text-sm font-medium tracking-[0.05em]"><?php _e('釣竿レンタル（1日）', 'tozem'); ?></span>
-                                <span class="text-sm font-serif">¥3,500</span>
-                            </div>
-                            <div class="flex justify-between items-baseline border-b border-gray-100 pb-2">
-                                <span class="text-sm font-medium tracking-[0.05em]"><?php _e('スノーケル', 'tozem'); ?></span>
-                                <span class="text-sm font-serif">¥3,500</span>
-                            </div>
-                            <div class="flex justify-between items-baseline border-b border-gray-100 pb-2">
-                                <span class="text-sm font-medium tracking-[0.05em]"><?php _e('BBQ施設利用料', 'tozem'); ?></span>
-                                <span class="text-sm font-serif">¥5,000</span>
-                            </div>
-                            <div class="flex justify-between items-baseline border-b border-gray-100 pb-2">
-                                <span class="text-sm font-medium tracking-[0.05em]"><?php _e('ライフジャケット', 'tozem'); ?></span>
-                                <span class="text-sm font-serif">¥500</span>
-                            </div>
+                            <?php for ( $i = 1; $i <= 4; $i++ ) : ?>
+                                <?php
+                                $label = get_theme_mod( 'tozem_opt_item' . $i . '_label', '' );
+                                $price = get_theme_mod( 'tozem_opt_item' . $i . '_price', '' );
+                                
+                                // Default values if unset
+                                if ( $label === '' && $i === 1 ) { $label = '釣竿レンタル（1日）'; $price = '¥3,500'; }
+                                if ( $label === '' && $i === 2 ) { $label = 'スノーケル'; $price = '¥3,500'; }
+                                if ( $label === '' && $i === 3 ) { $label = 'BBQ施設利用料'; $price = '¥5,000'; }
+                                if ( $label === '' && $i === 4 ) { $label = 'ライフジャケット'; $price = '¥500'; }
+
+                                if ( $label ) : 
+                                ?>
+                                <div class="flex justify-between items-baseline border-b border-gray-100 pb-2">
+                                    <span class="text-sm font-medium tracking-[0.05em]"><?php echo esc_html( $label ); ?></span>
+                                    <span class="text-sm font-serif"><?php echo esc_html( $price ); ?></span>
+                                </div>
+                                <?php endif; ?>
+                            <?php endfor; ?>
                         </div>
                         <div class="p-4 bg-gray-50 rounded-sm space-y-2 mt-auto">
                             <div class="flex items-start space-x-2 text-xs text-gray-700 italic">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
                                 <p class="leading-relaxed">
-                                    <?php _e('西川名の海は魚影豊かな岩場です。安全のためマリンシューズ・手袋・ラッシュガードの着用をおすすめします（一部無料貸出あり）。', 'tozem'); ?>
+                                    <?php echo nl2br( esc_html( get_theme_mod( 'tozem_opt_note', __('西川名の海は魚影豊かな岩場です。安全のためマリンシューズ・手袋・ラッシュガードの着用をおすすめします（一部無料貸出あり）。', 'tozem') ) ) ); ?>
                                 </p>
                             </div>
                         </div>

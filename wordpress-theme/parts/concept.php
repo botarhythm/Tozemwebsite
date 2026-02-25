@@ -4,47 +4,47 @@
             <div class="space-y-16 text-center fade-up">
                 <div class="space-y-6">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl tracking-[0.2em]">
-                        <?php _e('藤ゼムとは', 'tozem'); ?>
+                        <?php echo esc_html( get_theme_mod( 'tozem_concept_title', __('藤ゼムとは', 'tozem') ) ); ?>
                     </h2>
                     <div class="w-12 h-px bg-gray-900 mx-auto"></div>
                 </div>
 
                 <div class="space-y-12 text-gray-700 leading-loose fade-up" data-delay="300">
                     <p class="text-base md:text-lg tracking-[0.1em]">
-                        <?php _e('千葉県館山市、西川名。<br />海のそばにたたずむ、古民家一棟貸しの宿。', 'tozem'); ?>
+                        <?php echo nl2br( esc_html( get_theme_mod( 'tozem_concept_text_1', __("千葉県館山市、西川名。\n海のそばにたたずむ、古民家一棟貸しの宿。", 'tozem') ) ) ); ?>
                     </p>
 
                     <p class="text-base md:text-lg tracking-[0.1em]">
-                        <?php _e('光が、海が、余白が、<br />あなたを本来の自分へと還していく。', 'tozem'); ?>
+                        <?php echo nl2br( esc_html( get_theme_mod( 'tozem_concept_text_2', __("光が、海が、余白が、\nあなたを本来の自分へと還していく。", 'tozem') ) ) ); ?>
                     </p>
 
                     <p class="text-base md:text-lg tracking-[0.1em]">
-                        <?php _e('飾らない土地の呼吸に、そっと心を委ねる。<br />自然と余白を感じる滞在体験を。', 'tozem'); ?>
+                        <?php echo nl2br( esc_html( get_theme_mod( 'tozem_concept_text_3', __("飾らない土地の呼吸に、そっと心を委ねる。\n自然と余白を感じる滞在体験を。", 'tozem') ) ) ); ?>
                     </p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 fade-up" data-delay="600">
                     <div class="space-y-4">
                         <div class="text-4xl text-gray-300">01</div>
-                        <h3 class="text-lg tracking-[0.15em]"><?php _e('光', 'tozem'); ?></h3>
+                        <h3 class="text-lg tracking-[0.15em]"><?php echo esc_html( get_theme_mod( 'tozem_concept_feat1_title', __('光', 'tozem') ) ); ?></h3>
                         <p class="text-sm text-gray-600 tracking-[0.05em] leading-relaxed">
-                            <?php _e('時間と共に変わる<br />自然光の移ろい', 'tozem'); ?>
+                            <?php echo nl2br( esc_html( get_theme_mod( 'tozem_concept_feat1_text', __("時間と共に変わる\n自然光の移ろい", 'tozem') ) ) ); ?>
                         </p>
                     </div>
 
                     <div class="space-y-4">
                         <div class="text-4xl text-gray-300">02</div>
-                        <h3 class="text-lg tracking-[0.15em]"><?php _e('海', 'tozem'); ?></h3>
+                        <h3 class="text-lg tracking-[0.15em]"><?php echo esc_html( get_theme_mod( 'tozem_concept_feat2_title', __('海', 'tozem') ) ); ?></h3>
                         <p class="text-sm text-gray-600 tracking-[0.05em] leading-relaxed">
-                            <?php _e('波の音に包まれる<br />静かな時間', 'tozem'); ?>
+                            <?php echo nl2br( esc_html( get_theme_mod( 'tozem_concept_feat2_text', __("波の音に包まれる\n静かな時間", 'tozem') ) ) ); ?>
                         </p>
                     </div>
 
                     <div class="space-y-4">
                         <div class="text-4xl text-gray-300">03</div>
-                        <h3 class="text-lg tracking-[0.15em]"><?php _e('余白', 'tozem'); ?></h3>
+                        <h3 class="text-lg tracking-[0.15em]"><?php echo esc_html( get_theme_mod( 'tozem_concept_feat3_title', __('余白', 'tozem') ) ); ?></h3>
                         <p class="text-sm text-gray-600 tracking-[0.05em] leading-relaxed">
-                            <?php _e('何もしない贅沢<br />自分を取り戻す空間', 'tozem'); ?>
+                            <?php echo nl2br( esc_html( get_theme_mod( 'tozem_concept_feat3_text', __("何もしない贅沢\n自分を取り戻す空間", 'tozem') ) ) ); ?>
                         </p>
                     </div>
                 </div>

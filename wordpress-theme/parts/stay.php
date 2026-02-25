@@ -1,7 +1,7 @@
 <section id="stay" class="py-32 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-20 fade-up">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em]"><?php _e('宿泊', 'tozem'); ?></h2>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em]"><?php echo esc_html( get_theme_mod( 'tozem_stay_title', __('宿泊', 'tozem') ) ); ?></h2>
             <div class="w-12 h-px bg-gray-900 mx-auto mb-6"></div>
             <p class="text-gray-600 tracking-[0.1em]">Stay</p>
         </div>
@@ -10,21 +10,21 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20 fade-up" data-delay="200">
                 <div class="aspect-[4/3] overflow-hidden">
                     <img 
-                        src="https://images.unsplash.com/photo-1658664566242-d2a09a92a53e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbmVzZSUyMHNlYXNpZGUlMjBob3VzZSUyMG9jZWFufGVufDF8fHx8MTc3MTM4ODI2M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-                        alt="<?php _e('藤ゼム外観', 'tozem'); ?>" 
+                        src="<?php echo esc_url( get_theme_mod( 'tozem_stay_img_1', 'https://images.unsplash.com/photo-1658664566242-d2a09a92a53e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbmVzZSUyMHNlYXNpZGUlMjBob3VzZSUyMG9jZWFufGVufDF8fHx8MTc3MTM4ODI2M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral' ) ); ?>" 
+                        alt="<?php esc_attr_e('藤ゼム外観', 'tozem'); ?>" 
                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
                     />
                 </div>
 
                 <div class="space-y-6">
                     <h3 class="text-2xl md:text-3xl tracking-[0.15em]">
-                        <?php _e('海辺の古民家', 'tozem'); ?>
+                        <?php echo esc_html( get_theme_mod( 'tozem_stay_block1_title', __('海辺の古民家', 'tozem') ) ); ?>
                     </h3>
                     <p class="text-gray-700 leading-loose tracking-[0.05em]">
-                        <?php _e('館山の海を望む静かな立地。<br />古き良き日本家屋の趣を残しながら、<br />快適な滞在ができるよう整えました。', 'tozem'); ?>
+                        <?php echo nl2br( esc_html( get_theme_mod( 'tozem_stay_block1_text1', __("館山の海を望む静かな立地。\n古き良き日本家屋の趣を残しながら、\n快適な滞在ができるよう整えました。", 'tozem') ) ) ); ?>
                     </p>
                     <p class="text-gray-700 leading-loose tracking-[0.05em]">
-                        <?php _e('時間を気にせず、<br />ただ在ることの豊かさを感じてください。', 'tozem'); ?>
+                        <?php echo nl2br( esc_html( get_theme_mod( 'tozem_stay_block1_text2', __("時間を気にせず、\nただ在ることの豊かさを感じてください。", 'tozem') ) ) ); ?>
                     </p>
                 </div>
             </div>
@@ -32,23 +32,23 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20 fade-up" data-delay="400">
                 <div class="aspect-[4/3] overflow-hidden lg:order-2">
                     <img 
-                        src="https://images.unsplash.com/photo-1759310706794-b8a350561d93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbmVzZSUyMHRyYWRpdGlvbmFsJTIwaG91c2UlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NzEzODgyNjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-                        alt="<?php _e('藤ゼム室内', 'tozem'); ?>" 
+                        src="<?php echo esc_url( get_theme_mod( 'tozem_stay_img_2', 'https://images.unsplash.com/photo-1759310706794-b8a350561d93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbmVzZSUyMHRyYWRpdGlvbmFsJTIwaG91c2UlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NzEzODgyNjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral' ) ); ?>" 
+                        alt="<?php esc_attr_e('藤ゼム室内', 'tozem'); ?>" 
                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
                     />
                 </div>
 
                 <div class="space-y-6 lg:order-1">
                     <h3 class="text-2xl md:text-3xl tracking-[0.15em]">
-                        <?php _e('心地よい空間', 'tozem'); ?>
+                        <?php echo esc_html( get_theme_mod( 'tozem_stay_block2_title', __('心地よい空間', 'tozem') ) ); ?>
                     </h3>
                     <p class="text-gray-700 leading-loose tracking-[0.05em]">
-                        <?php _e('木のぬくもり、畳の香り。<br />自然素材に囲まれた室内は、<br />心と体を穏やかに整えてくれます。', 'tozem'); ?>
+                        <?php echo nl2br( esc_html( get_theme_mod( 'tozem_stay_block2_text', __("木のぬくもり、畳の香り。\n自然素材に囲まれた室内は、\n心と体を穏やかに整えてくれます。", 'tozem') ) ) ); ?>
                     </p>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 fade-up" data-delay="600">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-32 fade-up" data-delay="600">
                 <?php
                 $features = [
                     [
@@ -73,12 +73,12 @@
                     ],
                 ];
                 foreach ($features as $feature) : ?>
-                    <div class="text-center space-y-4 p-6 bg-white shadow-sm">
+                    <div class="text-center space-y-4 p-6">
                         <div class="flex justify-center">
                             <?php echo $feature['icon']; ?>
                         </div>
-                        <h4 class="tracking-[0.1em]"><?php echo esc_html($feature['title']); ?></h4>
-                        <p class="text-sm text-gray-600 tracking-[0.05em]">
+                        <h4 class="tracking-[0.1em] text-gray-800"><?php echo esc_html($feature['title']); ?></h4>
+                        <p class="text-sm text-gray-500 tracking-[0.05em]">
                             <?php echo esc_html($feature['desc']); ?>
                         </p>
                     </div>
@@ -86,49 +86,63 @@
             </div>
 
             <!-- Facility Details -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-sm tracking-[0.05em] mt-32 fade-up" data-delay="600">
-                <div class="space-y-4">
-                    <h4 class="text-lg tracking-[0.1em] border-b border-gray-200 pb-2">
-                        <?php _e('設備・アメニティ (無料)', 'tozem'); ?>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-sm tracking-[0.05em] mt-24 md:mt-32 fade-up" data-delay="600">
+                <div class="space-y-6">
+                    <h4 class="text-lg tracking-[0.1em] border-b border-gray-100 pb-3 text-gray-800">
+                        <?php echo esc_html( get_theme_mod( 'tozem_stay_amenity_title', __('設備・アメニティ (無料)', 'tozem') ) ); ?>
                     </h4>
-                    <ul class="space-y-2 text-gray-600">
-                        <li><?php _e('バス / トイレ / 洗面', 'tozem'); ?></li>
-                        <li><?php _e('外シャワー (海上がりに便利)', 'tozem'); ?></li>
-                        <li><?php _e('エアコン / 扇風機 / 暖房機器', 'tozem'); ?></li>
-                        <li><?php _e('Wi-Fi (Free)', 'tozem'); ?></li>
-                        <li><?php _e('シャンプー / リンス / ボディソープ', 'tozem'); ?></li>
-                        <li><?php _e('フェイスタオル / 歯ブラシセット / ドライヤー', 'tozem'); ?></li>
-                        <li class="text-xs text-gray-400"><?php _e('※寝巻きのご用意はございません', 'tozem'); ?></li>
+                    <ul class="space-y-3 text-gray-600">
+                        <?php
+                        $list = get_theme_mod( 'tozem_stay_amenity_list', "バス / トイレ / 洗面\n外シャワー (海上がりに便利)\nエアコン / 扇風機 / 暖房機器\nWi-Fi (Free)\nシャンプー / リンス / ボディソープ\nフェイスタオル / 歯ブラシセット / ドライヤー" );
+                        $items = explode( "\n", $list );
+                        foreach ( $items as $item ) {
+                            if ( trim( $item ) ) {
+                                echo '<li class="flex items-center space-x-2"><span class="w-1 h-1 bg-gray-300 rounded-full"></span><span>' . esc_html( trim( $item ) ) . '</span></li>';
+                            }
+                        }
+                        ?>
+                        <?php if ( get_theme_mod( 'tozem_stay_amenity_note', __('※寝巻きのご用意はございません', 'tozem') ) ) : ?>
+                            <li class="text-xs text-gray-400 pt-2"><?php echo esc_html( get_theme_mod( 'tozem_stay_amenity_note', __('※寝巻きのご用意はございません', 'tozem') ) ); ?></li>
+                        <?php endif; ?>
                     </ul>
                 </div>
 
-                <div class="space-y-4">
-                    <h4 class="text-lg tracking-[0.1em] border-b border-gray-200 pb-2">
-                        <?php _e('キッチン設備 (無料)', 'tozem'); ?>
+                <div class="space-y-6">
+                    <h4 class="text-lg tracking-[0.1em] border-b border-gray-100 pb-3 text-gray-800">
+                        <?php echo esc_html( get_theme_mod( 'tozem_stay_kitchen_title', __('キッチン設備 (無料)', 'tozem') ) ); ?>
                     </h4>
-                    <ul class="space-y-2 text-gray-600">
-                        <li><?php _e('ガスコンロ / 冷蔵庫 / 冷凍庫', 'tozem'); ?></li>
-                        <li><?php _e('電気炊飯器 / 電気ポット / 土鍋', 'tozem'); ?></li>
-                        <li><?php _e('カセットコンロ (ボンベは持参)', 'tozem'); ?></li>
-                        <li><?php _e('調理器具一式 (鍋・フライパン他)', 'tozem'); ?></li>
-                        <li><?php _e('食器・カトラリー一式', 'tozem'); ?></li>
-                        <li><?php _e('お子様用プラ食器', 'tozem'); ?></li>
+                    <ul class="space-y-3 text-gray-600">
+                        <?php
+                        $list = get_theme_mod( 'tozem_stay_kitchen_list', "ガスコンロ / 冷蔵庫 / 冷凍庫\n電気炊飯器 / 電気ポット / 土鍋\nカセットコンロ (ボンベは持参)\n調理器具一式 (鍋・フライパン他)\n食器・カトラリー一式\nお子様用プラ食器" );
+                        $items = explode( "\n", $list );
+                        foreach ( $items as $item ) {
+                            if ( trim( $item ) ) {
+                                echo '<li class="flex items-center space-x-2"><span class="w-1 h-1 bg-gray-300 rounded-full"></span><span>' . esc_html( trim( $item ) ) . '</span></li>';
+                            }
+                        }
+                        ?>
                     </ul>
                 </div>
 
-                <div class="space-y-4">
-                    <h4 class="text-lg tracking-[0.1em] border-b border-gray-200 pb-2">
-                        <?php _e('その他・オプション', 'tozem'); ?>
+                <div class="space-y-6">
+                    <h4 class="text-lg tracking-[0.1em] border-b border-gray-100 pb-3 text-gray-800">
+                        <?php echo esc_html( get_theme_mod( 'tozem_stay_other_title', __('その他・オプション', 'tozem') ) ); ?>
                     </h4>
-                    <ul class="space-y-2 text-gray-600">
-                        <li><?php _e('屋根付きウッドデッキ', 'tozem'); ?></li>
-                        <li><?php _e('外テーブル', 'tozem'); ?></li>
-                        <li><?php _e('バーベキュー台 (有料レンタル ¥5,000)', 'tozem'); ?></li>
-                        <li><?php _e('駐車場 (2台)', 'tozem'); ?></li>
-                        <li><?php _e('全館禁煙 (屋外に灰皿あり)', 'tozem'); ?></li>
+                    <ul class="space-y-3 text-gray-600">
+                        <?php
+                        $list = get_theme_mod( 'tozem_stay_other_list', "屋根付きウッドデッキ\n外テーブル\nバーベキュー台 (有料レンタル ¥5,000)\n駐車場 (2台)\n全館禁煙 (屋外に灰皿あり)" );
+                        $items = explode( "\n", $list );
+                        foreach ( $items as $item ) {
+                            if ( trim( $item ) ) {
+                                echo '<li class="flex items-center space-x-2"><span class="w-1 h-1 bg-gray-300 rounded-full"></span><span>' . esc_html( trim( $item ) ) . '</span></li>';
+                            }
+                        }
+                        ?>
                     </ul>
                 </div>
             </div>
+
+
         </div>
     </div>
 </section>

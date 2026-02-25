@@ -1,8 +1,110 @@
 /*
 Theme Name: Tozem Website
-Theme URI: https://botarhythm.github.io/Tozemwebsite/
-Author: Botarhythm
-Description: A custom theme converted from React/Vite project.
-Version: 1.0
-Text Domain: tozem-website
+Theme URI: https://tozem.net
+Author: Botarhythm AI Studio
+Author URI: https://botarhythm.com
+Description: Custom theme for Tozem Website
+Version: 3.1
+Text Domain: tozem
 */
+
+/* ==========================================================================
+   Contact Form 7 Custom Styles
+   ========================================================================== */
+
+/* フォーム全体の最大幅と中央揃え */
+.wpcf7 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* CF7が自動挿入する p 要素の余白を調整（無駄な改行スペースを削減） */
+.wpcf7 p {
+    margin-bottom: 1.5rem;
+}
+
+/* ラベルテキストのスタイル調整 */
+.wpcf7 label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #374151;
+    /* gray-700 */
+    font-weight: 500;
+}
+
+/* 各種入力欄（テキスト、メール、テキストエリア等）の全幅化と装飾 */
+.wpcf7-text,
+.wpcf7-email,
+.wpcf7-textarea,
+.wpcf7-date,
+.wpcf7-select {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    /* gray-300 */
+    border-radius: 0.25rem;
+    /* rounded */
+    background-color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #1f2937;
+    /* gray-800 */
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* フォーカス時のスタイル */
+.wpcf7-text:focus,
+.wpcf7-email:focus,
+.wpcf7-textarea:focus,
+.wpcf7-date:focus,
+.wpcf7-select:focus {
+    outline: none;
+    border-color: #111827;
+    /* gray-900 (テーマカラー) */
+    box-shadow: 0 0 0 1px #111827;
+}
+
+/* 「その他ご要望」などのテキストエリアの最低高を確保 */
+.wpcf7-textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+/* 送信ボタンのスタイル化（テーマカラーに合わせる） */
+.wpcf7-submit {
+    display: inline-block;
+    background-color: #111827;
+    /* gray-900 */
+    color: #ffffff;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    border: none;
+    border-radius: 0.25rem;
+    /* rounded */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s;
+    letter-spacing: 0.1em;
+    width: 100%;
+    text-align: center;
+}
+
+/* ホバー時のリアクション */
+.wpcf7-submit:hover {
+    background-color: #374151;
+    /* gray-700 */
+}
+
+/* 送信ボタンが押された時のリアクション */
+.wpcf7-submit:active {
+    transform: scale(0.98);
+}
+
+/* スピナー画像の余白調整 */
+.wpcf7-spinner {
+    margin-top: 10px;
+}
