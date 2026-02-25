@@ -100,6 +100,11 @@ function tozem_add_structured_data() {
 add_action('wp_head', 'tozem_add_structured_data');
 
 /**
+ *  Disable Contact Form 7 auto-paragraph (wpautop)
+ */
+add_filter('wpcf7_autop_or_not', '__return_false');
+
+/**
  * Customizer Additions
  */
 require get_template_directory() . '/inc/customizer.php';
