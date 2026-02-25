@@ -1,12 +1,12 @@
 <section id="gallery" class="py-32 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-20 fade-up">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em]">
+        <header class="text-center mb-16 md:mb-20 fade-up">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em] text-gray-900">
                 <?php echo esc_html( get_theme_mod( 'tozem_gallery_title', __('ギャラリー', 'tozem') ) ); ?>
             </h2>
-            <div class="w-12 h-px bg-gray-900 mx-auto mb-6"></div>
-            <p class="text-gray-600 tracking-[0.1em]">Gallery</p>
-        </div>
+            <div class="w-12 h-px bg-gray-900 mx-auto mb-6" aria-hidden="true"></div>
+            <p class="text-gray-600 tracking-[0.1em] uppercase">Gallery</p>
+        </header>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <?php
@@ -31,13 +31,16 @@
             }
             
             foreach ($gallery_images as $index => $image) : ?>
-                <div class="aspect-[4/3] overflow-hidden group cursor-pointer bg-gray-100 fade-up" data-delay="<?php echo $index * 100; ?>">
+                <figure class="aspect-[4/3] overflow-hidden rounded-xl group cursor-pointer bg-gray-200 fade-up" data-delay="<?php echo $index * 100; ?>">
                     <img 
                         src="<?php echo esc_url($image['url']); ?>" 
                         alt="<?php echo esc_attr($image['alt']); ?>" 
                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
+                        loading="lazy"
+                        width="800"
+                        height="600"
                     />
-                </div>
+                </figure>
             <?php endforeach; ?>
         </div>
     </div>

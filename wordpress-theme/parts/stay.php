@@ -1,23 +1,27 @@
 <section id="stay" class="py-32 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-20 fade-up">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em]"><?php echo esc_html( get_theme_mod( 'tozem_stay_title', __('宿泊', 'tozem') ) ); ?></h2>
-            <div class="w-12 h-px bg-gray-900 mx-auto mb-6"></div>
-            <p class="text-gray-600 tracking-[0.1em]">Stay</p>
-        </div>
+        <header class="text-center mb-16 md:mb-20 fade-up">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em] text-gray-900"><?php echo esc_html( get_theme_mod( 'tozem_stay_title', __('宿泊', 'tozem') ) ); ?></h2>
+            <div class="w-12 h-px bg-gray-900 mx-auto mb-6" aria-hidden="true"></div>
+            <p class="text-gray-600 tracking-[0.1em] uppercase">Stay</p>
+        </header>
 
         <div class="max-w-6xl mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20 fade-up" data-delay="200">
-                <div class="aspect-[4/3] overflow-hidden">
+            <article class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center mb-24 fade-up" data-delay="200">
+                <figure class="aspect-[4/3] overflow-hidden rounded-xl bg-gray-200">
                     <img 
                         src="<?php echo esc_url( get_theme_mod( 'tozem_stay_img_1', 'https://images.unsplash.com/photo-1658664566242-d2a09a92a53e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbmVzZSUyMHNlYXNpZGUlMjBob3VzZSUyMG9jZWFufGVufDF8fHx8MTc3MTM4ODI2M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral' ) ); ?>" 
                         alt="<?php esc_attr_e('藤ゼム外観', 'tozem'); ?>" 
                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
+                        loading="lazy"
+                        width="800"
+                        height="600"
                     />
-                </div>
+                </figure>
 
                 <div class="space-y-6">
-                    <h3 class="text-2xl md:text-3xl tracking-[0.15em]">
+                    <header>
+                        <h3 class="text-2xl md:text-3xl tracking-[0.15em] text-gray-900">
                         <?php echo esc_html( get_theme_mod( 'tozem_stay_block1_title', __('海辺の古民家', 'tozem') ) ); ?>
                     </h3>
                     <p class="text-gray-700 leading-loose tracking-[0.05em]">
@@ -27,28 +31,32 @@
                         <?php echo nl2br( esc_html( get_theme_mod( 'tozem_stay_block1_text2', __("時間を気にせず、\nただ在ることの豊かさを感じてください。", 'tozem') ) ) ); ?>
                     </p>
                 </div>
-            </div>
+            </article>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20 fade-up" data-delay="400">
-                <div class="aspect-[4/3] overflow-hidden lg:order-2">
+            <article class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center mb-24 fade-up" data-delay="400">
+                <figure class="aspect-[4/3] overflow-hidden rounded-xl bg-gray-200 lg:order-2">
                     <img 
                         src="<?php echo esc_url( get_theme_mod( 'tozem_stay_img_2', 'https://images.unsplash.com/photo-1759310706794-b8a350561d93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbmVzZSUyMHRyYWRpdGlvbmFsJTIwaG91c2UlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NzEzODgyNjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral' ) ); ?>" 
                         alt="<?php esc_attr_e('藤ゼム室内', 'tozem'); ?>" 
                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
+                        loading="lazy"
+                        width="800"
+                        height="600"
                     />
-                </div>
+                </figure>
 
                 <div class="space-y-6 lg:order-1">
-                    <h3 class="text-2xl md:text-3xl tracking-[0.15em]">
+                    <header>
+                        <h3 class="text-2xl md:text-3xl tracking-[0.15em] text-gray-900">
                         <?php echo esc_html( get_theme_mod( 'tozem_stay_block2_title', __('心地よい空間', 'tozem') ) ); ?>
                     </h3>
                     <p class="text-gray-700 leading-loose tracking-[0.05em]">
                         <?php echo nl2br( esc_html( get_theme_mod( 'tozem_stay_block2_text', __("木のぬくもり、畳の香り。\n自然素材に囲まれた室内は、\n心と体を穏やかに整えてくれます。", 'tozem') ) ) ); ?>
                     </p>
                 </div>
-            </div>
+            </article>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-32 fade-up" data-delay="600">
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-32 fade-up" data-delay="600">
                 <?php
                 $features = [
                     [
@@ -73,22 +81,22 @@
                     ],
                 ];
                 foreach ($features as $feature) : ?>
-                    <div class="text-center space-y-4 p-6">
-                        <div class="flex justify-center">
+                    <li class="text-center space-y-4 p-6 hover:bg-white hover:shadow-sm rounded-xl transition-all duration-300">
+                        <div class="flex justify-center" aria-hidden="true">
                             <?php echo $feature['icon']; ?>
                         </div>
-                        <h4 class="tracking-[0.1em] text-gray-800"><?php echo esc_html($feature['title']); ?></h4>
+                        <h4 class="tracking-[0.1em] text-gray-900 font-medium"><?php echo esc_html($feature['title']); ?></h4>
                         <p class="text-sm text-gray-500 tracking-[0.05em]">
                             <?php echo esc_html($feature['desc']); ?>
                         </p>
-                    </div>
+                    </li>
                 <?php endforeach; ?>
-            </div>
+            </ul>
 
             <!-- Facility Details -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-sm tracking-[0.05em] mt-24 md:mt-32 fade-up" data-delay="600">
-                <div class="space-y-6">
-                    <h4 class="text-lg tracking-[0.1em] border-b border-gray-100 pb-3 text-gray-800">
+                <section class="space-y-6">
+                    <h4 class="text-lg tracking-[0.1em] border-b border-gray-200 pb-3 text-gray-900">
                         <?php echo esc_html( get_theme_mod( 'tozem_stay_amenity_title', __('設備・アメニティ (無料)', 'tozem') ) ); ?>
                     </h4>
                     <ul class="space-y-3 text-gray-600">
@@ -105,10 +113,10 @@
                             <li class="text-xs text-gray-400 pt-2"><?php echo esc_html( get_theme_mod( 'tozem_stay_amenity_note', __('※寝巻きのご用意はございません', 'tozem') ) ); ?></li>
                         <?php endif; ?>
                     </ul>
-                </div>
+                </section>
 
-                <div class="space-y-6">
-                    <h4 class="text-lg tracking-[0.1em] border-b border-gray-100 pb-3 text-gray-800">
+                <section class="space-y-6">
+                    <h4 class="text-lg tracking-[0.1em] border-b border-gray-200 pb-3 text-gray-900">
                         <?php echo esc_html( get_theme_mod( 'tozem_stay_kitchen_title', __('キッチン設備 (無料)', 'tozem') ) ); ?>
                     </h4>
                     <ul class="space-y-3 text-gray-600">
@@ -122,10 +130,10 @@
                         }
                         ?>
                     </ul>
-                </div>
+                </section>
 
-                <div class="space-y-6">
-                    <h4 class="text-lg tracking-[0.1em] border-b border-gray-100 pb-3 text-gray-800">
+                <section class="space-y-6">
+                    <h4 class="text-lg tracking-[0.1em] border-b border-gray-200 pb-3 text-gray-900">
                         <?php echo esc_html( get_theme_mod( 'tozem_stay_other_title', __('その他・オプション', 'tozem') ) ); ?>
                     </h4>
                     <ul class="space-y-3 text-gray-600">
@@ -139,7 +147,7 @@
                         }
                         ?>
                     </ul>
-                </div>
+                </section>
             </div>
 
 

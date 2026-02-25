@@ -1,0 +1,10 @@
+                                                   
+ Usage: xserver dns [OPTIONS]                      
+                                                   
++- Options ---------------------------------------+
+| --service        TEXT  [default: None]          |
+| --server         TEXT  [default: None]          |
+| --help                 Show this message and    |
+|                        exit.                    |
++-------------------------------------------------+
+

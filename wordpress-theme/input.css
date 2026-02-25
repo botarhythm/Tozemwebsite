@@ -5,6 +5,45 @@
 @import "../src/styles/fonts.css";
 @import "../src/styles/theme.css";
 
+@theme {
+    /* Fluid Typography */
+    --text-base: clamp(1rem, 0.95vw + 0.76rem, 1.125rem);
+    --text-lg: clamp(1.125rem, 1.2vw + 0.825rem, 1.25rem);
+    --text-xl: clamp(1.25rem, 1.5vw + 0.875rem, 1.5rem);
+    --text-2xl: clamp(1.5rem, 2vw + 1rem, 1.875rem);
+    --text-3xl: clamp(1.875rem, 3vw + 1.125rem, 2.25rem);
+    --text-4xl: clamp(2.25rem, 4vw + 1.25rem, 3rem);
+    --text-5xl: clamp(3rem, 5vw + 1.75rem, 4.5rem);
+    --text-6xl: clamp(3.75rem, 6vw + 2.25rem, 6rem);
+    --text-7xl: clamp(4.5rem, 7vw + 2.75rem, 7.5rem);
+
+    /* Rich Darks overriding pure black */
+    --color-black: #1A1C20;
+    --color-gray-900: #1A1C20;
+    --color-gray-800: #272A30;
+    --color-gray-700: #3F444E;
+}
+
+@layer base {
+
+    /* Interactive elements tactile feedback & outline */
+    a,
+    button,
+    input,
+    select,
+    textarea,
+    .card,
+    summary {
+        @apply transition-all duration-300;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    *:focus-visible {
+        outline: 2px solid #1A1C20;
+        outline-offset: 4px;
+    }
+}
+
 @layer utilities {
     .fade-up {
         @apply opacity-0 translate-y-10 transition-all duration-1000 ease-out;
@@ -20,5 +59,16 @@
 
     .grow-y.is-visible {
         @apply h-16;
+    }
+
+    /* Responsive Resilience: Fluid Grid */
+    .grid-fluid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .grid-fluid-md {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
 }

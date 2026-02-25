@@ -1,12 +1,12 @@
 <section id="reservation" class="pt-32 pb-32 bg-white" style="padding-top: 8rem;">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12 fade-up">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em]">
+        <header class="text-center mb-16 md:mb-20 fade-up">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em] text-gray-900">
                 <?php echo esc_html( get_theme_mod( 'tozem_res_title', __('ご予約・お問い合わせ', 'tozem') ) ); ?>
             </h2>
-            <div class="w-12 h-px bg-gray-900 mx-auto mb-6"></div>
-            <p class="text-gray-600 tracking-[0.1em]"><?php echo esc_html( get_theme_mod( 'tozem_res_subtitle', 'Reservation' ) ); ?></p>
-        </div>
+            <div class="w-12 h-px bg-gray-900 mx-auto mb-6" aria-hidden="true"></div>
+            <p class="text-gray-600 tracking-[0.1em] uppercase"><?php echo esc_html( get_theme_mod( 'tozem_res_subtitle', 'Reservation' ) ); ?></p>
+        </header>
 
         <div class="max-w-2xl mx-auto fade-up" data-delay="200">
             <div class="mb-12 text-center space-y-4">

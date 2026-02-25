@@ -1,0 +1,16 @@
+                            
+ Usage: xserver login       
+ [OPTIONS]                  
+                            
++- Options ----------------+
+| --em…        TEXT  [def… |
+|                    None] |
+| --pa…        TEXT  [def… |
+|                    None] |
+| --he…              Show  |
+|                    this  |
+|                    mess… |
+|                    and   |
+|                    exit. |
++--------------------------+
+

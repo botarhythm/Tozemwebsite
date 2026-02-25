@@ -1,15 +1,15 @@
 <section id="access" class="pt-32 pb-4 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-20 fade-up">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em]">
+        <header class="text-center mb-16 md:mb-20 fade-up">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em] text-gray-900">
                 <?php _e('アクセス', 'tozem'); ?>
             </h2>
-            <div class="w-12 h-px bg-gray-900 mx-auto mb-6"></div>
-            <p class="text-gray-600 tracking-[0.1em]">Access</p>
-        </div>
+            <div class="w-12 h-px bg-gray-900 mx-auto mb-6" aria-hidden="true"></div>
+            <p class="text-gray-600 tracking-[0.1em] uppercase">Access</p>
+        </header>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            <div class="space-y-6 fade-up" data-delay="0">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto items-start">
+            <address class="space-y-8 fade-up not-italic" data-delay="0">
                 <div class="flex items-start space-x-4">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-gray-800 flex-shrink-0 mt-1" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                     <div class="space-y-2">
@@ -95,9 +95,9 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </address>
 
-            <div class="h-96 lg:h-full bg-gray-200 overflow-hidden fade-up" data-delay="200">
+            <div class="h-96 lg:h-full min-h-[400px] rounded-xl overflow-hidden bg-gray-200 fade-up" data-delay="200">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3136.563539341184!2d139.75641431505733!3d34.96393600809622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6017f5daa2fc7ab7%3A0xf7bf1e1827abc25c!2z6Jek44K844OgIC0g5rW36L6644Gu5Y-k5rCR5a625a6_!5e1!3m2!1sja!2sjp!4v1771390745529!5m2!1sja!2sjp"
                     width="100%"

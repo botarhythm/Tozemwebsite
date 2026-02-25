@@ -1,14 +1,16 @@
 <section id="price" class="py-20 md:py-32 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto fade-up" data-delay="200">
-            <div class="text-center mb-16">
-                <h3 class="text-2xl md:text-3xl tracking-[0.2em] font-medium">
+            <header class="text-center mb-16 md:mb-20">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl tracking-[0.2em] text-gray-900 font-light mb-6">
                     <?php echo esc_html( get_theme_mod( 'tozem_rate_title', '宿泊料金の詳細（税込）' ) ); ?>
-                </h3>
-                <div class="mt-6 text-sm text-gray-500 tracking-[0.1em]">
+                </h2>
+                <div class="w-12 h-px bg-gray-900 mx-auto mb-6" aria-hidden="true"></div>
+                <p class="text-gray-600 tracking-[0.1em] uppercase mb-6">Price</p>
+                <div class="text-sm text-gray-500 tracking-[0.1em]">
                     <?php echo esc_html( get_theme_mod( 'tozem_rate_base_note', '※1棟貸切 4名様までの基本料金です' ) ); ?>
                 </div>
-            </div>
+            </header>
             
             <!-- 3 Column Pricing -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 border-y border-gray-100 py-10">
@@ -50,34 +52,34 @@
             </div>
             
             <!-- Additional Rates & Discounts -->
-            <div class="space-y-6 max-w-3xl mx-auto">
-                <div class="flex flex-col md:flex-row md:justify-between py-4 border-b border-gray-50">
+            <ul class="space-y-2 max-w-3xl mx-auto">
+                <li class="flex flex-col md:flex-row md:justify-between py-4 border-b border-gray-200">
                     <h4 class="text-sm tracking-[0.1em] text-gray-600 mb-2 md:mb-0">
                         <?php echo esc_html( get_theme_mod( 'tozem_rate_add_label', '追加料金 (1名様あたり)' ) ); ?>
                     </h4>
                     <p class="text-base text-gray-800 tracking-[0.05em]">
                         <?php echo esc_html( get_theme_mod( 'tozem_rate_add_price', '大人: ¥9,000 / 子供: ¥5,000' ) ); ?>
                     </p>
-                </div>
+                </li>
 
-                <div class="flex flex-col md:flex-row md:justify-between py-4 border-b border-gray-50">
+                <li class="flex flex-col md:flex-row md:justify-between py-4 border-b border-gray-200">
                     <h4 class="text-sm tracking-[0.1em] text-gray-600 mb-2 md:mb-0">
                         <?php echo esc_html( get_theme_mod( 'tozem_rate_discount_label', '連泊割引' ) ); ?>
                     </h4>
                     <p class="text-base text-gray-800 tracking-[0.05em]">
-                        <?php echo esc_html( get_theme_mod( 'tozem_rate_discount_text', '2泊目以降 ¥3,000 引き (清掃なし)' ) ); ?>
+                        <?php echo esc_html( get_theme_mod( 'tozem_rate_discount_text', '2泊目以降 ¥3,000 引き (清扫なし)' ) ); ?>
                     </p>
-                </div>
+                </li>
 
-                <div class="flex flex-col md:flex-row md:justify-between py-4 border-b border-gray-50">
+                <li class="flex flex-col md:flex-row md:justify-between py-4 border-b border-gray-200">
                     <h4 class="text-sm tracking-[0.1em] text-gray-600 mb-2 md:mb-0">
                         <?php echo esc_html( get_theme_mod( 'tozem_rate_overtime_label', '時間外利用' ) ); ?>
                     </h4>
                     <p class="text-base text-gray-800 tracking-[0.05em]">
                         <?php echo esc_html( get_theme_mod( 'tozem_rate_overtime_text', '¥5,000 / 1h (要相談)' ) ); ?>
                     </p>
-                </div>
-            </div>
+                </li>
+            </ul>
             
             <div class="mt-12 text-center text-sm text-gray-400 tracking-[0.05em] leading-relaxed italic">
                 <?php echo nl2br( esc_html( get_theme_mod( 'tozem_rate_note', "※季節や曜日により料金が変動いたします。詳細はお問い合わせください。\n※小学生以下のお子様は無料です。" ) ) ); ?>

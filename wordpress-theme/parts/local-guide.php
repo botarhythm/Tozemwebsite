@@ -1,22 +1,22 @@
 <section id="guide" class="py-32 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-20 fade-up">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em]">
+        <header class="text-center mb-16 md:mb-20 fade-up">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl mb-6 tracking-[0.2em] text-gray-900">
                 <?php _e('周辺ガイド', 'tozem'); ?>
             </h2>
-            <div class="w-12 h-px bg-gray-900 mx-auto mb-6"></div>
-            <p class="text-gray-800 tracking-[0.1em]">Local Guide</p>
-        </div>
+            <div class="w-12 h-px bg-gray-900 mx-auto mb-6" aria-hidden="true"></div>
+            <p class="text-gray-600 tracking-[0.1em] uppercase">Local Guide</p>
+        </header>
 
         <div class="max-w-6xl mx-auto space-y-24">
             <!-- Sea & Fishing -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16">
                 <!-- Sea Spots -->
-                <div class="fade-up" style="background-color: white; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #f3f4f6; display: flex; flex-direction: column; gap: 2rem;" data-delay="200">
-                    <div class="flex items-center space-x-4 border-b border-gray-100 pb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"><path d="M2 6c.6.5 1.2 1 2.5 1s2.5-1 4-1 2.6 1 4 1 2.5-1 4-1 2.5 1 4 1"/><path d="M2 12c.6.5 1.2 1 2.5 1s2.5-1 4-1 2.6 1 4 1 2.5-1 4-1 2.5 1 4 1"/><path d="M2 18c.6.5 1.2 1 2.5 1s2.5-1 4-1 2.6 1 4 1 2.5-1 4-1 2.5 1 4 1"/></svg>
-                        <h3 class="text-2xl tracking-[0.1em]"><?php _e('海スポット', 'tozem'); ?></h3>
-                    </div>
+                <section class="bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-8 fade-up" data-delay="200">
+                    <header class="flex items-center space-x-4 border-b border-gray-100 pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400" aria-hidden="true"><path d="M2 6c.6.5 1.2 1 2.5 1s2.5-1 4-1 2.6 1 4 1 2.5-1 4-1 2.5 1 4 1"/><path d="M2 12c.6.5 1.2 1 2.5 1s2.5-1 4-1 2.6 1 4 1 2.5-1 4-1 2.5 1 4 1"/><path d="M2 18c.6.5 1.2 1 2.5 1s2.5-1 4-1 2.6 1 4 1 2.5-1 4-1 2.5 1 4 1"/></svg>
+                        <h3 class="text-2xl tracking-[0.1em] text-gray-900"><?php _e('海スポット', 'tozem'); ?></h3>
+                    </header>
                     <div class="space-y-6">
                         <div class="group">
                             <div class="flex justify-between items-baseline mb-2">
@@ -40,14 +40,14 @@
                             <p class="text-sm text-gray-600 leading-relaxed"><?php _e('砂浜と岩場のある小さな海岸で、磯遊びも楽しめます。駐車場が小さいため、早めの場所確保をおすすめします。※ライフセーバーは常駐していません。', 'tozem'); ?></p>
                         </div>
                     </div>
-                </div>
+                </section>
 
                 <!-- Fishing Spots -->
-                <div class="fade-up" style="background-color: white; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #f3f4f6; display: flex; flex-direction: column; gap: 2rem;" data-delay="400">
-                    <div class="flex items-center space-x-4 border-b border-gray-100 pb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-500"><path d="M7 2a2 2 0 0 1-2 2v2a2 2 0 1 1-4 0V4a2 2 0 0 1 2-2z"/><path d="M7 2h10"/><path d="M17 2a2 2 0 0 1 2 2v2a2 2 0 1 1 4 0V4a2 2 0 0 1-2-2z"/><path d="M7 13a2 2 0 0 1-2 2v2a2 2 0 1 1-4 0v-2a2 2 0 0 1 2-2z"/><path d="M7 13h10"/><path d="M17 13a2 2 0 0 1 2 2v2a2 2 0 1 1 4 0v-2a2 2 0 0 1-2-2z"/><path d="M21 2c0 2-2 2-2 2"/><path d="M3 2c0 2 2 2 2 2"/><path d="M21 13c0 2-2 2-2 2"/><path d="M3 13c0 2 2 2 2 2"/></svg>
-                        <h3 class="text-2xl tracking-[0.1em]"><?php _e('釣りスポット', 'tozem'); ?></h3>
-                    </div>
+                <section class="bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-8 fade-up" data-delay="400">
+                    <header class="flex items-center space-x-4 border-b border-gray-100 pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-500" aria-hidden="true"><path d="M7 2a2 2 0 0 1-2 2v2a2 2 0 1 1-4 0V4a2 2 0 0 1 2-2z"/><path d="M7 2h10"/><path d="M17 2a2 2 0 0 1 2 2v2a2 2 0 1 1 4 0V4a2 2 0 0 1-2-2z"/><path d="M7 13a2 2 0 0 1-2 2v2a2 2 0 1 1-4 0v-2a2 2 0 0 1 2-2z"/><path d="M7 13h10"/><path d="M17 13a2 2 0 0 1 2 2v2a2 2 0 1 1 4 0v-2a2 2 0 0 1-2-2z"/><path d="M21 2c0 2-2 2-2 2"/><path d="M3 2c0 2 2 2 2 2"/><path d="M21 13c0 2-2 2-2 2"/><path d="M3 13c0 2 2 2 2 2"/></svg>
+                        <h3 class="text-2xl tracking-[0.1em] text-gray-900"><?php _e('釣りスポット', 'tozem'); ?></h3>
+                    </header>
                     <div class="space-y-6">
                         <div>
                             <h4 class="text-lg font-medium tracking-[0.05em] mb-2 flex items-center">
@@ -77,17 +77,17 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
 
             <!-- Shopping & Rental -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16">
                 <!-- Shopping -->
-                <div class="fade-up" style="background-color: white; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #f3f4f6; display: flex; flex-direction: column; gap: 2rem;" data-delay="600">
-                    <div class="flex items-center space-x-4 border-b border-gray-100 pb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-orange-400"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
-                        <h3 class="text-2xl tracking-[0.1em]"><?php _e('お買い物・産直', 'tozem'); ?></h3>
-                    </div>
+                <section class="bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-8 fade-up" data-delay="600">
+                    <header class="flex items-center space-x-4 border-b border-gray-100 pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-orange-400" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                        <h3 class="text-2xl tracking-[0.1em] text-gray-900"><?php _e('お買い物・産直', 'tozem'); ?></h3>
+                    </header>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
                         <div class="space-y-1">
                             <h4 class="text-sm font-medium tracking-[0.05em]"><?php _e('おどや大神宮店', 'tozem'); ?></h4>
@@ -130,14 +130,14 @@
                             <p class="text-xs text-gray-500 leading-relaxed"><?php _e('いちじくスイーツがおすすめの農園。※いちじく狩りは要予約です。', 'tozem'); ?></p>
                         </div>
                     </div>
-                </div>
+                </section>
 
                 <!-- Rental -->
-                <div class="fade-up h-full flex flex-col" style="background-color: white; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #f3f4f6; display: flex; flex-direction: column; gap: 2rem;" data-delay="800">
-                    <div class="flex items-center space-x-4 border-b border-gray-100 pb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
-                        <h3 class="text-2xl tracking-[0.1em]"><?php echo esc_html( get_theme_mod( 'tozem_opt_title', __('オプション・レンタル', 'tozem') ) ); ?></h3>
-                    </div>
+                <section class="bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-8 fade-up h-full" data-delay="800">
+                    <header class="flex items-center space-x-4 border-b border-gray-100 pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+                        <h3 class="text-2xl tracking-[0.1em] text-gray-900"><?php echo esc_html( get_theme_mod( 'tozem_opt_title', __('オプション・レンタル', 'tozem') ) ); ?></h3>
+                    </header>
                     <div class="flex-grow flex flex-col space-y-8">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
                             <?php for ( $i = 1; $i <= 4; $i++ ) : ?>
@@ -169,7 +169,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     </div>
