@@ -59,28 +59,42 @@
                 <div class="pt-8 border-t border-gray-800">
                     <nav class="flex flex-wrap justify-center gap-6 mb-8">
                         <?php
-                        $footer_nav = [
-                            ['name' => __('藤ゼムとは', 'tozem'), 'href' => '#concept'],
-                            ['name' => __('宿泊', 'tozem'), 'href' => '#stay'],
-                            ['name' => __('倉庫体験', 'tozem'), 'href' => '#experience'],
-                            ['name' => __('ギャラリー', 'tozem'), 'href' => '#gallery'],
-                            ['name' => __('アクセス', 'tozem'), 'href' => '#access'],
-                            ['name' => __('ご予約', 'tozem'), 'href' => '#reservation'],
-                        ];
-                        
-                        $agreement_url = get_theme_mod( 'tozem_footer_agreement', '' );
-                        $agreement_href = !empty($agreement_url) ? $agreement_url : '/terms/';
-                        $footer_nav[] = ['name' => __('宿泊約款', 'tozem'), 'href' => $agreement_href];
-
-                        $footer_nav[] = ['name' => __('プライバシーポリシー', 'tozem'), 'href' => '/privacy-policy/'];
-                        
-                        foreach ($footer_nav as $item) : 
-                            $target = isset($item['target']) ? ' target="' . esc_attr($item['target']) . '" rel="noopener noreferrer"' : '';
+                        if ( has_nav_menu( 'footer-menu' ) ) {
+                            wp_nav_menu( array(
+                                'theme_location' => 'footer-menu',
+                                'container'      => false,
+                                'menu_class'     => 'flex flex-wrap justify-center gap-6 m-0 p-0 list-none',
+                                'fallback_cb'    => false,
+                                'depth'          => 1,
+                                'link_before'    => '',
+                                'link_after'     => '',
+                            ) );
+                        } else {
+                            // Fallback if no menu is assigned
+                            $footer_nav = [
+                                ['name' => __('藤ゼムとは', 'tozem'), 'href' => home_url('/#concept')],
+                                ['name' => __('宿泊', 'tozem'), 'href' => home_url('/#stay')],
+                                ['name' => __('倉庫体験', 'tozem'), 'href' => home_url('/#experience')],
+                                ['name' => __('ギャラリー', 'tozem'), 'href' => home_url('/#gallery')],
+                                ['name' => __('アクセス', 'tozem'), 'href' => home_url('/#access')],
+                                ['name' => __('ご予約', 'tozem'), 'href' => home_url('/#reservation')],
+                            ];
+                            
+                            $agreement_url = get_theme_mod( 'tozem_footer_agreement', '' );
+                            $agreement_href = !empty($agreement_url) ? $agreement_url : home_url('/terms/');
+                            $footer_nav[] = ['name' => __('宿泊約款', 'tozem'), 'href' => $agreement_href];
+    
+                            $footer_nav[] = ['name' => __('プライバシーポリシー', 'tozem'), 'href' => home_url('/privacy-policy/')];
+                            
+                            foreach ($footer_nav as $item) : 
+                            ?>
+                                <a href="<?php echo esc_url($item['href']); ?>" class="text-sm text-gray-400 hover:text-white transition-colors tracking-[0.1em]">
+                                    <?php echo esc_html($item['name']); ?>
+                                </a>
+                            <?php 
+                            endforeach;
+                        }
                         ?>
-                            <a href="<?php echo esc_url($item['href']); ?>"<?php echo $target; ?> class="text-sm text-gray-400 hover:text-white transition-colors tracking-[0.1em]">
-                                <?php echo esc_html($item['name']); ?>
-                            </a>
-                        <?php endforeach; ?>
                     </nav>
 
                     <p class="text-gray-500 text-sm tracking-[0.1em]">

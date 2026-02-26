@@ -26,6 +26,7 @@ function tozem_theme_setup() {
     // Register Navigation Menus
     register_nav_menus( array(
         'header-menu' => __( 'ヘッダーメニュー', 'tozem' ),
+        'footer-menu' => __( 'フッターメニュー', 'tozem' ),
     ) );
 }
 add_action( 'after_setup_theme', 'tozem_theme_setup' );
@@ -67,6 +68,17 @@ function tozem_nav_menu_item_title( $title, $item, $args, $depth ) {
     return $title;
 }
 add_filter( 'nav_menu_item_title', 'tozem_nav_menu_item_title', 10, 4 );
+
+/**
+ * Add Tailwind classes to footer menu links
+ */
+function tozem_footer_nav_menu_link_attributes( $atts, $item, $args ) {
+    if ( $args->theme_location == 'footer-menu' ) {
+            $atts['class'] = 'text-sm text-gray-400 hover:text-white transition-colors tracking-[0.1em]';
+    }
+    return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'tozem_footer_nav_menu_link_attributes', 10, 3 );
 
 /**
  * Output Schema.org JSON-LD for SEO/AIEO
