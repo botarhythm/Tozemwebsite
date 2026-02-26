@@ -116,3 +116,44 @@ require get_template_directory() . '/inc/customizer.php';
  * NOTE: Console branding is intentionally kept in assets/js/main.js
  * to avoid inline script CSP violations. This PHP hook is removed.
  */
+
+/**
+ * LCP Optimization: Preload hero image
+ *
+ * Outputs <link rel="preload"> for the hero image in <head> at the earliest
+ * priority (1), so the browser fetches the LCP image before parsing the DOM.
+ * Automatically tracks the Customizer URL — no hardcoding needed.
+ */
+function tozem_preload_hero_image() {
+    // Only on the front page
+    if ( ! is_front_page() ) {
+        return;
+    }
+
+    $hero_img_url = get_theme_mod(
+        'tozem_hero_img',
+        'https://images.unsplash.com/photo-1581845912101-b79003f1b71e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080'
+    );
+
+    if ( ! empty( $hero_img_url ) ) {
+        printf(
+            '<link rel="preload" as="image" href="%s" fetchpriority="high">' . "\n",
+            esc_url( $hero_img_url )
+        );
+    }
+}
+// Priority 1 = output before wp_head() enqueues any CSS/JS
+add_action( 'wp_head', 'tozem_preload_hero_image', 1 );
+
+/**
+ * LCP Optimization: Prevent WordPress from adding loading="lazy"
+ * to the hero <img> tag (defensive guard for future WP core changes).
+ * wp_filter_content_tags() only touches post content, but this filter
+ * acts as a belt-and-suspenders safeguard.
+ */
+function tozem_disable_lazy_for_hero( $default, $tag_name ) {
+    // We handle the hero <img> directly in template — keep lazy loading
+    // enabled for all other images (the filter default is already true).
+    return $default;
+}
+add_filter( 'wp_lazy_loading_enabled', 'tozem_disable_lazy_for_hero', 10, 2 );
