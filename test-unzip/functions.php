@@ -1,0 +1,206 @@
+<?php
+
+function tozem_theme_scripts() {
+    $theme_version = wp_get_theme()->get( 'Version' );
+
+    // Enqueue Tailwind (compiled)
+    wp_enqueue_style( 'tozem-tailwind', get_template_directory_uri() . '/assets/css/style.css', array(), $theme_version, 'all' );
+    
+    // Enqueue Main Style (Theme metadata + CF7 overrides)
+    wp_enqueue_style( 'tozem-style', get_stylesheet_uri(), array('tozem-tailwind'), $theme_version );
+
+    // Enqueue Custom JS
+    wp_enqueue_script( 'tozem-script', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), $theme_version, true );
+}
+add_action( 'wp_enqueue_scripts', 'tozem_theme_scripts' );
+
+function tozem_theme_setup() {
+    load_theme_textdomain( 'tozem', get_template_directory() . '/languages' );
+    add_theme_support( 'title-tag' );
+    add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'responsive-embeds' );
+    add_theme_support( 'editor-styles' );
+    add_theme_support( 'html5', array( 'style', 'script' ) );
+    add_theme_support( 'align-wide' );
+
+    // Register Navigation Menus
+    register_nav_menus( array(
+        'header-menu' => __( 'ヘッダーメニュー', 'tozem' ),
+        'footer-menu' => __( 'フッターメニュー', 'tozem' ),
+    ) );
+}
+add_action( 'after_setup_theme', 'tozem_theme_setup' );
+
+/**
+ * Add Tailwind classes to menu links
+ */
+function tozem_nav_menu_link_attributes( $atts, $item, $args ) {
+    if ( $args->theme_location == 'header-menu' ) {
+            // Base Tailwind classes
+            $classes = 'nav-link text-sm tracking-[0.15em] transition-colors duration-300 hover:opacity-60 text-white flex flex-col items-center justify-center text-center';
+            
+            // Adjust for mobile menu context
+            if ( isset( $args->is_mobile_menu ) && $args->is_mobile_menu ) {
+                $classes = 'mobile-nav-link block text-sm tracking-[0.15em] transition-colors duration-300 text-white text-center';
+            }
+
+            $atts['class'] = $classes;
+    }
+    return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'tozem_nav_menu_link_attributes', 10, 3 );
+
+/**
+ * Support for menu subtitles using the '|' separator
+ */
+function tozem_nav_menu_item_title( $title, $item, $args, $depth ) {
+    if ( $args->theme_location == 'header-menu' && strpos( $title, '|' ) !== false ) {
+        $parts = explode( '|', $title );
+        $main_title = trim( $parts[0] );
+        $subtitle = trim( $parts[1] );
+        
+        $title = sprintf(
+            '<span class="main-title font-medium">%s</span><span class="subtitle block text-[10px] opacity-60 mt-1 uppercase font-normal tracking-[0.2em]">%s</span>',
+            esc_html( $main_title ),
+            esc_html( $subtitle )
+        );
+    }
+    return $title;
+}
+add_filter( 'nav_menu_item_title', 'tozem_nav_menu_item_title', 10, 4 );
+
+/**
+ * Add Tailwind classes to footer menu links
+ */
+function tozem_footer_nav_menu_link_attributes( $atts, $item, $args ) {
+    if ( $args->theme_location == 'footer-menu' ) {
+            $atts['class'] = 'text-sm text-gray-400 hover:text-white transition-colors tracking-[0.1em]';
+    }
+    return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'tozem_footer_nav_menu_link_attributes', 10, 3 );
+
+/**
+ * Output Schema.org JSON-LD for SEO/AIEO
+ */
+function tozem_add_structured_data() {
+    $schema = [
+        '@context' => 'https://schema.org',
+        '@type' => 'LodgingBusiness',
+        'name' => '藤ゼム - Tozem',
+        'image' => get_template_directory_uri() . '/assets/images/hero.jpg', // Placeholder, ideally dynamic
+        'description' => '都市での忙しい日々の中で、自分を見失っていく感覚。その時、海のそばで過ごした時間が私を本来の自分に還してくれました。藤ゼムは、あなたが自分を取り戻すための余白のある時間を提供します。',
+        'address' => [
+            '@type' => 'PostalAddress',
+            'streetAddress' => '西川名184-1',
+            'addressLocality' => '館山市',
+            'addressRegion' => '千葉県',
+            'postalCode' => '294-0315',
+            'addressCountry' => 'JP'
+        ],
+        'geo' => [
+            '@type' => 'GeoCoordinates',
+            'latitude' => '34.963936',
+            'longitude' => '139.756414'
+        ],
+        'url' => 'https://tozem.net',
+        'email' => 'info@tozem.net',
+        'telephone' => '+81-00-0000-0000', // Needs actual phone number if available
+        'priceRange' => '$$$' // Estimated
+    ];
+
+    echo '<script type="application/ld+json">' . json_encode($schema, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . '</script>' . "\n";
+}
+add_action('wp_head', 'tozem_add_structured_data');
+
+/**
+ *  Disable Contact Form 7 auto-paragraph (wpautop)
+ */
+add_filter('wpcf7_autop_or_not', '__return_false');
+
+/**
+ * Customizer Additions
+ */
+require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Developer Signature
+ * NOTE: Console branding is intentionally kept in assets/js/main.js
+ * to avoid inline script CSP violations. This PHP hook is removed.
+ */
+
+/**
+ * LCP Optimization: Preload hero image
+ *
+ * Outputs <link rel="preload"> for the hero image in <head> at the earliest
+ * priority (1), so the browser fetches the LCP image before parsing the DOM.
+ * Automatically tracks the Customizer URL — no hardcoding needed.
+ */
+function tozem_preload_hero_image() {
+    // Only on the front page
+    if ( ! is_front_page() ) {
+        return;
+    }
+
+    $hero_img_url = get_theme_mod(
+        'tozem_hero_img',
+        'https://images.unsplash.com/photo-1581845912101-b79003f1b71e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080'
+    );
+
+    if ( ! empty( $hero_img_url ) ) {
+        printf(
+            '<link rel="preload" as="image" href="%s" fetchpriority="high">' . "\n",
+            esc_url( $hero_img_url )
+        );
+    }
+}
+// Priority 1 = output before wp_head() enqueues any CSS/JS
+add_action( 'wp_head', 'tozem_preload_hero_image', 1 );
+
+/**
+ * LCP Optimization: Prevent WordPress from adding loading="lazy"
+ * to the hero <img> tag (defensive guard for future WP core changes).
+ * wp_filter_content_tags() only touches post content, but this filter
+ * acts as a belt-and-suspenders safeguard.
+ */
+function tozem_disable_lazy_for_hero( $default, $tag_name ) {
+    // We handle the hero <img> directly in template — keep lazy loading
+    // enabled for all other images (the filter default is already true).
+    return $default;
+}
+add_filter( 'wp_lazy_loading_enabled', 'tozem_disable_lazy_for_hero', 10, 2 );
+
+/**
+ * Apply Design Style Settings
+ * Removes border-radius if 'square' is selected in Customizer.
+ */
+function tozem_apply_design_styles() {
+    $style = get_theme_mod( 'tozem_image_style', 'rounded' );
+    if ( $style === 'square' ) {
+        echo '<style type="text/css">' . "\n";
+        echo '/* Customizer Override: Square Style */' . "\n";
+        echo '.rounded-sm, .rounded, .rounded-md, .rounded-lg, .rounded-xl, .rounded-2xl, .rounded-3xl, .rounded-full {' . "\n";
+        echo '    border-radius: 0 !important;' . "\n";
+        echo '}' . "\n";
+        echo '</style>' . "\n";
+    }
+}
+add_action( 'wp_head', 'tozem_apply_design_styles', 99 );
+
+/**
+ * Add custom Dashboard Widget for Management Manual
+ */
+function tozem_add_dashboard_widgets() {
+    wp_add_dashboard_widget(
+        'tozem_management_manual_widget',
+        'サイト管理マニュアル',
+        'tozem_management_manual_widget_render'
+    );
+}
+add_action( 'wp_dashboard_setup', 'tozem_add_dashboard_widgets' );
+
+function tozem_management_manual_widget_render() {
+    $pdf_url = get_template_directory_uri() . '/assets/Tozem_Website_Management_Manual.pdf';
+    echo '<p>TOZEMウェブサイトの更新・管理方法に関するマニュアルは、以下のリンクから閲覧（またはダウンロード）いただけます。</p>';
+    echo '<p><a href="' . esc_url( $pdf_url ) . '" target="_blank" class="button button-primary">マニュアルを見る (PDF)</a></p>';
+}
