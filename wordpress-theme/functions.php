@@ -169,3 +169,20 @@ function tozem_disable_lazy_for_hero( $default, $tag_name ) {
     return $default;
 }
 add_filter( 'wp_lazy_loading_enabled', 'tozem_disable_lazy_for_hero', 10, 2 );
+
+/**
+ * Apply Design Style Settings
+ * Removes border-radius if 'square' is selected in Customizer.
+ */
+function tozem_apply_design_styles() {
+    $style = get_theme_mod( 'tozem_image_style', 'rounded' );
+    if ( $style === 'square' ) {
+        echo '<style type="text/css">' . "\n";
+        echo '/* Customizer Override: Square Style */' . "\n";
+        echo '.rounded-sm, .rounded, .rounded-md, .rounded-lg, .rounded-xl, .rounded-2xl, .rounded-3xl, .rounded-full {' . "\n";
+        echo '    border-radius: 0 !important;' . "\n";
+        echo '}' . "\n";
+        echo '</style>' . "\n";
+    }
+}
+add_action( 'wp_head', 'tozem_apply_design_styles', 99 );

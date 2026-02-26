@@ -44,7 +44,30 @@ function tozem_customize_register( $wp_customize ) {
     }
 
     // =========================================================
-    // 1. Header Section (ヘッダー設定)
+    // 1. Design Section (デザイン設定)
+    // =========================================================
+    $wp_customize->add_section( 'tozem_design_section', array(
+        'title'       => __( 'デザイン設定', 'tozem' ),
+        'priority'    => 15,
+        'description' => __( 'サイト全体のデザインの方向性を設定します。', 'tozem' ),
+    ) );
+
+    $wp_customize->add_setting( 'tozem_image_style', array(
+        'default'   => 'rounded',
+        'transport' => 'refresh',
+    ) );
+    $wp_customize->add_control( 'tozem_image_style', array(
+        'label'    => __( 'サイトの形状スタイル (角丸 / スクエア)', 'tozem' ),
+        'section'  => 'tozem_design_section',
+        'type'     => 'radio',
+        'choices'  => array(
+            'rounded' => __( '角丸 (元のデザイン)', 'tozem' ),
+            'square'  => __( 'スクエア (直角・シャープ)', 'tozem' ),
+        ),
+    ) );
+
+    // =========================================================
+    // 2. Header Section (ヘッダー設定)
     // =========================================================
     $wp_customize->add_section( 'tozem_header_section', array(
         'title'       => __( 'ヘッダー設定', 'tozem' ),
