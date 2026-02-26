@@ -66,6 +66,7 @@
                             ['name' => __('ギャラリー', 'tozem'), 'href' => '#gallery'],
                             ['name' => __('アクセス', 'tozem'), 'href' => '#access'],
                             ['name' => __('ご予約', 'tozem'), 'href' => '#reservation'],
+                            ['name' => __('宿泊約款', 'tozem'), 'href' => '/terms/'],
                             ['name' => __('プライバシーポリシー', 'tozem'), 'href' => '/privacy-policy/'],
                         ];
                         foreach ($footer_nav as $item) : ?>
