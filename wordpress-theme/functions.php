@@ -186,3 +186,20 @@ function tozem_apply_design_styles() {
     }
 }
 add_action( 'wp_head', 'tozem_apply_design_styles', 99 );
+
+/**
+ * Add custom Dashboard Widget for Management Manual
+ */
+function tozem_add_dashboard_widgets() {
+    wp_add_dashboard_widget(
+        'tozem_management_manual_widget',
+        'サイト管理マニュアル',
+        'tozem_management_manual_widget_render'
+    );
+}
+add_action( 'wp_dashboard_setup', 'tozem_add_dashboard_widgets' );
+
+function tozem_management_manual_widget_render() {
+    echo '<p>TOZEMウェブサイトの更新・管理方法に関するマニュアルは、以下のリンクから閲覧（またはダウンロード）いただけます。</p>';
+    echo '<p><a href="https://tozem.net/wp-content/themes/wordpress-theme/assets/Tozem_Website_Management_Manual.pdf" target="_blank" class="button button-primary">マニュアルを見る (PDF)</a></p>';
+}
