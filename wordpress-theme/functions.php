@@ -200,6 +200,7 @@ function tozem_add_dashboard_widgets() {
 add_action( 'wp_dashboard_setup', 'tozem_add_dashboard_widgets' );
 
 function tozem_management_manual_widget_render() {
+    $pdf_url = get_template_directory_uri() . '/assets/Tozem_Website_Management_Manual.pdf';
     echo '<p>TOZEMウェブサイトの更新・管理方法に関するマニュアルは、以下のリンクから閲覧（またはダウンロード）いただけます。</p>';
-    echo '<p><a href="https://tozem.net/wp-content/themes/wordpress-theme/assets/Tozem_Website_Management_Manual.pdf" target="_blank" class="button button-primary">マニュアルを見る (PDF)</a></p>';
+    echo '<p><a href="' . esc_url( $pdf_url ) . '" target="_blank" class="button button-primary">マニュアルを見る (PDF)</a></p>';
 }
