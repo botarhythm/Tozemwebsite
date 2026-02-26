@@ -69,8 +69,8 @@
                         ];
                         
                         $agreement_url = get_theme_mod( 'tozem_footer_agreement', '' );
-                        $agreement_href = !empty($agreement_url) ? $agreement_url : '#';
-                        $footer_nav[] = ['name' => __('宿泊約款', 'tozem'), 'href' => $agreement_href, 'target' => '_blank'];
+                        $agreement_href = !empty($agreement_url) ? $agreement_url : '/terms/';
+                        $footer_nav[] = ['name' => __('宿泊約款', 'tozem'), 'href' => $agreement_href];
 
                         $footer_nav[] = ['name' => __('プライバシーポリシー', 'tozem'), 'href' => '/privacy-policy/'];
                         
