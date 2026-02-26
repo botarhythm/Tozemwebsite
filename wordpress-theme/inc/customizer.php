@@ -493,6 +493,9 @@ function tozem_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'tozem_footer_copyright', array( 'default' => '© 2026 TOZEM. All rights reserved.' ) );
     $wp_customize->add_control( 'tozem_footer_copyright', array( 'label' => __( 'コピーライト', 'tozem' ), 'section' => 'tozem_footer_section', 'type' => 'text' ) );
 
+    $wp_customize->add_setting( 'tozem_footer_agreement', array( 'default' => '' ) );
+    $wp_customize->add_control( 'tozem_footer_agreement', array( 'label' => __( '宿泊約款 URL (PDFやページURL)', 'tozem' ), 'section' => 'tozem_footer_section', 'type' => 'url' ) );
+
     // Instagram Feed Shortcode (Footer Bottom / General)
     $wp_customize->add_setting( 'tozem_instagram_shortcode', array(
         'default'           => '[instagram-feed]',

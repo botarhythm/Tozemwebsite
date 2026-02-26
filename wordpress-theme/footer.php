@@ -66,11 +66,18 @@
                             ['name' => __('ギャラリー', 'tozem'), 'href' => '#gallery'],
                             ['name' => __('アクセス', 'tozem'), 'href' => '#access'],
                             ['name' => __('ご予約', 'tozem'), 'href' => '#reservation'],
-                            ['name' => __('宿泊約款', 'tozem'), 'href' => '/terms/'],
-                            ['name' => __('プライバシーポリシー', 'tozem'), 'href' => '/privacy-policy/'],
                         ];
-                        foreach ($footer_nav as $item) : ?>
-                            <a href="<?php echo esc_url($item['href']); ?>" class="text-sm text-gray-400 hover:text-white transition-colors tracking-[0.1em]">
+                        
+                        $agreement_url = get_theme_mod( 'tozem_footer_agreement', '' );
+                        $agreement_href = !empty($agreement_url) ? $agreement_url : '#';
+                        $footer_nav[] = ['name' => __('宿泊約款', 'tozem'), 'href' => $agreement_href, 'target' => '_blank'];
+
+                        $footer_nav[] = ['name' => __('プライバシーポリシー', 'tozem'), 'href' => '/privacy-policy/'];
+                        
+                        foreach ($footer_nav as $item) : 
+                            $target = isset($item['target']) ? ' target="' . esc_attr($item['target']) . '" rel="noopener noreferrer"' : '';
+                        ?>
+                            <a href="<?php echo esc_url($item['href']); ?>"<?php echo $target; ?> class="text-sm text-gray-400 hover:text-white transition-colors tracking-[0.1em]">
                                 <?php echo esc_html($item['name']); ?>
                             </a>
                         <?php endforeach; ?>
