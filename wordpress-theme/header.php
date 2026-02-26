@@ -1,5 +1,5 @@
 <!-- 
-  Designed and Developed by Botarhythm AI Studio
+  Designed and Developed by Botarhythm Studio
 -->
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
