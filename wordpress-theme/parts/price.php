@@ -67,7 +67,7 @@
                         <?php echo esc_html( get_theme_mod( 'tozem_rate_discount_label', '連泊割引' ) ); ?>
                     </h4>
                     <p class="text-base text-gray-800 tracking-[0.05em]">
-                        <?php echo esc_html( get_theme_mod( 'tozem_rate_discount_text', '2泊目以降 ¥3,000 引き (清扫なし)' ) ); ?>
+                        <?php echo esc_html( get_theme_mod( 'tozem_rate_discount_text', '2泊目以降 ¥3,000 引き (清掃なし)' ) ); ?>
                     </p>
                 </li>
 
