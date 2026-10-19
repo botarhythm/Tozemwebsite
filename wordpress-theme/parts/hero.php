@@ -1,3 +1,4 @@
+<?php defined( 'ABSPATH' ) || exit; ?>
 <section id="hero" class="relative h-screen w-full overflow-hidden">
     <!-- Background Image -->
     <div class="absolute inset-0">

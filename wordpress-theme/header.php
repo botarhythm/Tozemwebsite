@@ -1,3 +1,4 @@
+<?php defined( 'ABSPATH' ) || exit; ?>
 <!-- 
   Designed and Developed by Botarhythm Studio
 -->

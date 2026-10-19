@@ -1,3 +1,4 @@
+<?php defined( 'ABSPATH' ) || exit; ?>
 <section id="concept" class="py-24 md:py-32 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto space-y-16 lg:space-y-24">

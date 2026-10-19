@@ -1,5 +1,7 @@
 <?php
 
+defined( 'ABSPATH' ) || exit;
+
 function tozem_theme_scripts() {
     $theme_version = wp_get_theme()->get( 'Version' );
 
@@ -105,7 +107,7 @@ function tozem_add_structured_data() {
         ],
         'url' => 'https://tozem.net',
         'email' => 'info@tozem.net',
-        'telephone' => '+81-00-0000-0000', // Needs actual phone number if available
+        // telephone: add only when a real public number is decided (placeholder removed in v4.5.17)
         'priceRange' => '$$$' // Estimated
     ];
 
@@ -117,6 +119,51 @@ add_action('wp_head', 'tozem_add_structured_data');
  *  Disable Contact Form 7 auto-paragraph (wpautop)
  */
 add_filter('wpcf7_autop_or_not', '__return_false');
+
+/**
+ * Security Hardening (v4.5.17)
+ */
+
+// XML-RPC: not used by this site. Disable auth methods and expose no methods
+// (blocks system.multicall password brute-force).
+add_filter( 'xmlrpc_enabled', '__return_false' );
+add_filter( 'xmlrpc_methods', '__return_empty_array' );
+add_filter( 'wp_headers', function ( $headers ) {
+    unset( $headers['X-Pingback'] );
+    return $headers;
+} );
+
+// Hide the user list from the public REST API (login names were visible at /wp-json/wp/v2/users).
+// Logged-in users keep access so the block editor works.
+add_filter( 'rest_endpoints', function ( $endpoints ) {
+    if ( is_user_logged_in() ) {
+        return $endpoints;
+    }
+    foreach ( array_keys( $endpoints ) as $route ) {
+        if ( 0 === strpos( $route, '/wp/v2/users' ) ) {
+            unset( $endpoints[ $route ] );
+        }
+    }
+    return $endpoints;
+} );
+
+// Author archives expose the login slug (/author/<slug>/). Redirect them to the home page.
+add_action( 'template_redirect', function () {
+    if ( is_author() ) {
+        wp_safe_redirect( home_url( '/' ), 301 );
+        exit;
+    }
+} );
+
+// oEmbed responses include the author name and URL. Remove them.
+add_filter( 'oembed_response_data', function ( $data ) {
+    unset( $data['author_name'], $data['author_url'] );
+    return $data;
+} );
+
+// Do not print the WordPress version in <head> / feeds.
+remove_action( 'wp_head', 'wp_generator' );
+add_filter( 'the_generator', '__return_empty_string' );
 
 /**
  * Customizer Additions

@@ -1,3 +1,4 @@
+<?php defined( 'ABSPATH' ) || exit; ?>
 <?php get_header(); ?>
 
 <main class="min-h-screen bg-white py-24">

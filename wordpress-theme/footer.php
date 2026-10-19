@@ -1,3 +1,4 @@
+<?php defined( 'ABSPATH' ) || exit; ?>
 <!-- Instagram Feed Section -->
 <div class="bg-gray-50 py-16 border-t border-gray-200">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">

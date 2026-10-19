@@ -1,3 +1,4 @@
+<?php defined( 'ABSPATH' ) || exit; ?>
 <section id="story" class="py-24 md:py-32 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <header class="text-center mb-16 md:mb-20 fade-up">
